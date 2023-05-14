@@ -1,0 +1,1084 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Euclid Circular A', sans-serif;
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff;
+    overflow: auto;
+}
+
+.nav{
+    width: 100% ;
+    background-color: #f8f9fc;
+    height: 5rem;
+    padding: .5rem;
+    display: flex;
+    flex-direction: row;   
+}
+
+.bars{
+    display:none;
+}
+
+.logo{
+    
+    color:#111827 ;
+    font-weight: bold;
+    font-size: 30px;
+    margin-left: 5rem;
+    margin-top: .8rem;   
+}
+
+#glass{
+    margin-top: 1.5rem;
+    margin-left: 20rem;
+    color:#9CA3AF;
+    position: relative;
+    font-size: 16px;
+}
+
+input{
+    background-color: #f8f9fc;
+    font-family: 'Euclid Circular B', sans-serif;
+    margin-top: .3rem;
+    margin-right: -.1rem;
+    color:#9CA3AF;
+    font-size: 15px;
+    padding-left: .8rem; 
+    border: none;
+    font-weight: 200;
+}
+
+.others{
+    width: 10rem;
+    display: flex;
+    margin-left: 16rem;
+    margin-top: -.2rem;
+   
+}
+    
+.link{
+    text-decoration: none;
+    color:#6B7280;
+    margin-left: 1.5rem;
+    margin-top: 1.2rem;
+    padding: .5rem;
+    font-size: 15px;
+    font-weight: 400;
+
+}
+
+.bold{
+    color:#000000;
+    font-weight: 500;
+}
+
+.basket{
+    width:25px;
+    height:23px;
+    margin-top: 1.2rem;
+    margin-left: 13rem;
+}
+
+header{
+    width: 100%;
+    height: 3.8rem;
+    background-color: #ffffff;
+}
+
+.items{
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding: .6rem;
+}
+
+.items li a{
+       text-decoration: none;
+       color: #374151;
+       font-size: 13px;
+       font-weight: 700;
+       padding: .2rem;
+}
+
+.active{
+    color: white;
+    background-color: red;
+    padding: .4rem;   
+}
+
+.parent{
+    width: 100%; 
+}
+
+.div1{
+    width: 65%;
+    height: 35rem;
+    float: left;
+    background-color: #192233;
+    margin-bottom: 6rem;
+}
+
+
+.group{
+    width:100%;
+    height: 35rem;
+    z-index: 1;   
+}
+
+.order{
+    width:35vw;
+    height: 45vh;
+    margin-top: 1rem;
+    background-color: #1F2937;
+    position: absolute;
+    top: 30%;
+    left: 8%;  
+    padding: 1.5rem;
+    margin: 1.5rem;
+}
+
+h1{
+    font-size: 60px;  
+    text-align: justify;
+    color: #FAFAFA; 
+}
+
+.new_arrivals{
+    font-size: 60px;
+    text-align: justify;
+    margin-top: .5rem;
+    color: #F7C59F;
+}
+
+p{
+    font-size: 20px;
+    margin-top: 1rem;
+    margin-bottom: 3.5rem;
+    color: #FAFAFA; 
+}
+
+#order{
+    background-color: #1F2937 ;
+    text-decoration: none;
+    padding: .6rem 1rem .6rem .6rem;
+    border: 1px solid #FAFAFA;
+    color: #ffffff;
+    margin-right: 1rem;
+    font-size: 14px;
+}
+
+#arr{
+    color: #ffffff;
+    margin-left: .8rem;
+    font-size: 20px;
+}
+
+.div2{
+    width: 35%;
+    height: 35rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F7C59F;
+    float: right;
+    margin-bottom: 6rem;
+}
+
+.circle{
+    width: 55%;
+    height: 55%;
+    float: right;
+    background-color: #ffffff;
+    border-radius: 55%;
+
+}
+
+.girl{
+    height: 70%;
+    position: absolute;
+    top:22%;
+    right: 8%;
+}
+
+/*This weeks highlights*/
+.container{
+    max-width: 1224px;
+    width: 90%;
+    margin: auto;  
+}
+
+.title{
+    width: 15rem;
+    margin: auto;
+    color: #192233;
+    text-align: center;
+    padding-bottom: 2rem;
+    }
+
+    hr{
+        width: 80px;
+        border: 3px solid #192233;
+        border-radius: 5px;
+        margin-left: 5rem;
+        margin-top: .5rem;
+        margin-bottom: 1rem;
+    }
+
+    .photo-gallery{
+        width: 100%;
+    }
+
+    .column_a{
+        margin: auto;
+    }
+
+    .photo_1{
+        width:35%;
+        float:left;
+    }
+
+    .exclusive{
+        width:15vw;
+        height: 25vh;
+        margin-top: 1rem;
+        background-color: transparent;
+        position: absolute;
+        top: 128%;
+        left: 16%;  
+    }
+
+    .ex{
+        font-size: 50px;
+        color: #ffffff;
+        font-weight: 600;
+        text-align: center;
+        margin-left: 3.5rem;
+    }
+
+    .shoes{
+        width:14vw;
+        height: 13vh;
+        position: absolute;
+        top: 130%;
+        right: 32%;
+        background-color: rgba(36, 34, 34, 0.5);
+    }
+
+    .es{
+        font-size: 15px;
+        color: #ffffff;
+        font-weight: 500;
+        margin-left: 1rem;    
+    }
+
+    .price{
+        font-size: 10px;
+        margin-top: -3.1rem;
+        margin-left: 1rem;
+        opacity: 0.7;
+    }
+
+    .off{
+        font-size: 14px;
+        margin-top: -2.8rem;
+        margin-left: 1rem;
+        color: #ffffff;
+        opacity: 0.7;
+    }
+
+    .photo_2{
+        width: 60%;
+        float: right;
+    }
+
+    .collection{
+        width:35vw;
+        height: 25vh;
+        margin-top: 1rem;
+        background-color: transparent;
+        position: absolute;
+        top: 130%;
+        left: 45%;  
+    }
+
+    .styles{
+    font-size: 50px;
+    font-stretch: expanded;
+    color: #ffffff;
+    font-weight: 600;
+    text-align: center;
+    margin-left: 3.5rem;
+    }
+
+    .shoe{
+        width:17vw;
+        height: 13vh;
+        position: absolute;
+        top: 122%;
+        left: -5%;
+        background-color: rgba(36, 34, 34, 0.5);;
+    }
+
+    .esc{
+        font-size: 15px;
+        color: #ffffff;
+        font-weight: 500;
+        margin-left: 1rem; 
+    }
+
+    .column_b{
+        position:absolute;
+        top: 181%;
+    }
+    
+    .photo_3{
+        width:60%;
+        float:left;
+    }
+
+    .new{
+        width:35vw;
+        height: 25vh;
+        margin-top: 1rem;
+        background-color: transparent;
+        position: absolute;
+        top: 30%;
+        left: 4%;  
+    }
+
+    .Arrival{
+    font-size: 50px;
+    font-stretch: expanded;
+    color: #ffffff;
+    font-weight: 600;
+    text-align: center;
+    margin-left: 3.5rem;
+    }
+
+    .sho{
+        width:14vw;
+        height: 13vh;
+        position: absolute;
+        top: 115%;
+        right: 66%;
+        background-color: rgba(36, 34, 34, 0.5);
+    }
+
+    .na{
+        font-size: 15px;
+        color: #ffffff;
+        font-weight: 500;
+        margin-left: 1rem; 
+    }
+
+    .photo_4{
+        width: 36%;
+        float: right;
+    }
+
+   
+    .item{
+        width:15vw;
+        height: 25vh;
+        margin-top: 1rem;
+        background-color: transparent;
+        position: absolute;
+        top: 22%;
+        right: 10%;  
+    }
+
+    .Exc{
+    font-size: 50px;
+    font-stretch: expanded;
+    color: #ffffff;
+    font-weight: 600;
+    text-align: center;
+    margin-left: 3.5rem;
+    }
+
+    .sh{
+        width:15vw;
+        height: 13vh;
+        position: absolute;
+        top: 135%;
+        right: 25%;
+        background-color: rgba(36, 34, 34, 0.5);
+    }
+
+    .ei{
+        font-size: 15px;
+        color: #ffffff;
+        font-weight: 500;
+        margin-left: 1rem;  
+    }
+
+    /*popular this week*/
+    .Container{
+        max-width: 1224px;
+        width: 90%;
+        position: absolute;
+        top: 260%;
+        left: 12%;
+        margin: auto;
+    }
+
+    .girls{
+        display: flex;
+    }
+
+    .pic{
+        margin: 1rem;
+    }
+
+    .strip{
+        font-size: 15px;
+        font-weight: 400;
+        color: #374151; ;    
+    }
+
+    .peplum{
+        font-size: 15px;
+        font-weight: 400;
+        margin-top: -3.5rem;
+        color: #374151; ;   
+    }
+
+    #price{
+        font-size: 15px;
+        font-weight: 700;
+        margin-top: -2.5rem;
+        color: #374151; 
+    }
+
+    .slash{
+        margin-left: .8rem;
+        color: #b8bbc0;
+        text-decoration: line-through;
+        font-weight: lighter;
+    }
+
+    .add{
+        margin-left: 3.5rem;
+    }
+
+    /*BRANDS FOR YOU*/
+    .COntainer{
+            max-width: 1224px;
+            width: 90%;
+            position: absolute;
+            top: 345%;
+            left: 12%;
+            margin: auto;
+        }
+    
+        #brands{
+            margin-top: 1rem;
+            margin-bottom: 8rem;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .details{
+            width: 40%;
+            height: 50%;
+            position: absolute;
+            top: 60%;
+            left: 5%;
+        }
+
+        .summer{
+            margin-top: 4rem;
+        }
+
+        #sum_collections{
+            color: #0D3F64;
+            margin-bottom: 1.5rem;
+        }
+
+        .coll{
+            color: #DE4F46
+        }
+
+        .now {
+            color:#DE4F46;
+            background-color: #ffffff;
+            text-decoration: none;
+            font-size: 10px;
+            font-weight: 600;
+            padding: 6px 10px;
+        }
+
+        #shop{
+            margin-left: .8rem;
+        }
+
+        .number{
+            width: 18rem;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10rem;
+            margin-bottom: 0;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .dot{
+            font-weight: 100;
+            color: #b8bbc0;
+        }
+
+        .words{
+            width: 19rem;
+            display: flex;
+            justify-content: space-between;
+            font-size: 10px;
+        }
+
+        /*FOOTER*/
+        .footer{
+            width: 100%;
+            height: 60%;
+            background-color: #F9FAFB;
+            position: absolute;
+            top: 470%;
+            left:0%;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            padding: 50px 100px 20px 100px;
+        }
+
+        .foot{
+            display: flex;
+            flex-direction: column;
+            list-style-type: none;
+            color:#000308;
+            font-weight: 700;
+            font-size: 14px;
+        }
+
+        li{
+            list-style-type: none;
+            margin-top: .8rem;    
+        }
+
+        a{
+            text-decoration: none;
+            color: #6B7280;
+            font-size: 12px;
+            font-weight: 400;
+        }
+
+        .socials{
+            display: flex;
+            justify-content: space-evenly;
+            margin-left: -1rem;
+        }
+
+        .soc{
+            margin: 1rem; 
+            border-radius: 50px;
+            padding: 3px;
+            background-color: #000000;
+            border: 1px solid #000000;
+            font-size:10px;
+            color: #ffffff;
+        }
+
+        .platforms{
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: .5rem;
+            margin-left: -1.6rem;
+            font-size: 24px;
+        }
+
+        .sign{
+            width: 30%;
+            height: auto;
+            float: right;
+            position: absolute;
+            top:30%;
+            right: 12%;
+        }
+
+        #signup{
+            font-size: 12px;
+            font-weight: 700;
+            color: #000000;
+            margin: 0;
+        }
+
+        .in{
+            padding:.7rem 12rem .7rem 1rem;
+            background-color: #ffffff;
+            margin-left: .1rem;
+            margin-top: .4rem;
+            font-size: 10px;
+            border:1px solid #000000
+        }
+
+        button{
+            background-color: #000000;
+            color:#ffffff ;
+            font-size: 12px;
+            font-weight: 700;
+            padding: .4rem;
+        }
+
+        .sub{
+            font-size: 10px;
+            color: #6B7280;
+            font-weight: 400;
+        }
+
+        #cookie{
+            color: #0F4FCE;
+            text-decoration: underline;
+            font-size: 10px;
+        }
+
+        .copyright{
+            width: 25%;
+            height: auto;
+            position: absolute;
+            top:70%;
+            left: 13%;
+        }
+
+        .copyright p{
+            color:#6B7280;
+            font-size: 12px;
+            font-weight: 500;
+            margin: 0;
+        }
+
+        .copyright a{
+            color:#6B7280;
+            font-size: 12px;
+            font-weight: 500;
+            margin: .5rem;
+            padding: .2rem;
+            text-decoration: underline;
+        }
+
+        .accept{
+            width: 30%;
+            position: absolute;
+            top: 65%;
+            right:12%;
+        }
+
+        .accept p{
+            color: #000000;
+            font-size: 14px;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        .cards{
+            margin-top: 1rem;
+        }
+
+        .cards img{
+            margin-top: .5rem;
+        }
+        /*end of footer*/
+
+        @media only screen and (max-width: 700px){
+            .nav{
+                display: flex;
+            }
+
+            .bars{
+                display: flex;
+                margin: 1.3rem;
+                font-size:24px;
+            }
+            
+            .logo{
+                position:absolute;
+                font-size: 30px;
+                margin-left: 5rem;
+                margin-top: .7rem;   
+            }
+
+            
+             #glass{
+                margin-top: 1.7rem;
+                margin-left: 20rem;
+            }
+
+            input{
+                margin-top: .3rem;
+                font-size: 15px;
+                padding-left: .4rem; 
+            }
+
+            .others{
+                display: none;
+            }
+           
+            .basket{
+                margin-top: 1.3rem;
+                margin-left: 2rem;
+            }
+
+            header{
+                width: 200%;
+                transform:translateX(100%);
+                animation: cssmarquee 15s linear infinite;
+                }
+                @keyframes cssmarquee {
+                0% {
+                transform: translateX(100%);
+                }
+                100% {
+                transform: translateX(-100%);
+                }
+                }
+
+            .items{
+                display: flex;
+                justify-content: space-between;
+                padding: .6rem;
+            }
+
+                
+                .items li a{
+                        margin: 1rem;
+                       font-size: 10px;
+                       font-weight: 600;
+                }
+
+                .parent{
+                    display: flex;
+                }
+
+                .div1{
+                    width: 65%;
+                    height: 30rem;
+                    margin-bottom: 6rem;
+                }
+
+                .group{
+                    height: 30rem;
+                }
+
+                .order{
+                    width:50vw;
+                    height: 40vh;
+                    position: absolute;
+                    top: 28%;
+                    left: 3%;  
+                }
+
+                h1{
+                    font-size: 30px; 
+                    margin-top: 1.5rem; 
+                }
+
+                .new_arrivals{
+                    font-size: 30px;
+                }
+
+                p{
+                    font-size: 10px;
+                }
+
+                #order{
+                    font-size: 8px;
+                }
+
+                #arr{
+                    font-size: 8px;
+                }
+
+                .div2{
+                    width: 35%;
+                    height: 30rem;
+                    margin-bottom: 6rem;
+                }
+
+                .circle{
+                    width: 80%;
+                    height: 40%;
+                    margin: auto;
+                    border-radius: 50%;
+                }
+
+                .girl{
+                    height: 65%;
+                    position: absolute;
+                    top:27%;
+                    right: 1%;
+                }
+
+                .title{
+                    width: 12rem;
+                    font-size: 14px;
+                    }
+                
+                    hr{
+                        width: 70px;
+                        margin-left: 4rem;
+                    }
+                
+                    .photo-gallery img{
+                        width: 70%;
+                    }
+
+                    .photo_1{
+                        position:absolute;
+                        top: 40%;
+                        left: 90%;
+                    }
+
+                    .photo_2{
+                        position: relative;
+                        top: 20%;
+                        left: 100%;
+                    }
+
+                    
+                    .new{
+                        width:60vw;
+                        position: absolute;
+                        top: 30%;
+                        left: 5%;  
+                    }
+
+                    .sho{
+                        width:26vw;
+                        position: absolute;
+                        top: 70%;
+                        right: 68%;
+                    }
+
+                    
+                    .off{
+                        font-size: 11px;
+                    }
+
+                    .item{
+                        width:35vw;
+                        top: 22%;
+                        right: 15%; 
+                    }
+                
+                    .sh{
+                        width:25vw;
+                        position: absolute;
+                        top: 100%;
+                        right: 25%;              
+                    }
+                
+                    #slider{
+                        overflow: hidden;
+                        margin-top: -3rem;
+                    }
+
+                    #slider figure{
+                        position: relative;
+                        width: 200%;
+                        margin: 2rem;
+                        left: 1%;
+                        animation: 15s slider infinite  ;
+                            }
+
+                        #slider figure .photo-gallery{
+                            float:left;
+                        
+                        }
+
+                    @keyframes slider{
+                        0%{
+                            left:0;
+                        }
+                        20%{
+                            left: 0;
+                        }
+                        25%{
+                            left: -100%;
+                        }
+                        45%{
+                            left: -100%;
+                        }
+                        50%{
+                            left: -200%;
+                        }
+                        70%{
+                            left: -200%
+                        }
+                        75%{
+                            left: -300%;
+                        }
+                        95%{
+                            left: -300%;
+                        }
+                        100%{
+                            left: -400%;
+                        }
+                    }
+
+                    .Container{
+                        top: 180%;
+                        left: 5%;
+                        
+                    }
+                
+                    .pic{
+                        width: 40%;
+                        margin: 2.2rem;
+                    }
+
+                    .strip{
+                        font-size: 12px;    
+                    }
+
+                    .peplum{
+                        font-size: 12px;  
+                    }
+
+                    #price{
+                        font-size: 12px;
+                    }
+
+                    .COntainer{
+                        top: 270%;
+                        left: 6%;
+                        margin: auto;  
+                    }
+                
+                    #brands{
+                        margin-bottom: 5rem;
+                        margin-right: 2rem;
+                    }
+
+                    .summer img{
+                        width: 110%;
+                    }
+
+                    .summer{
+                        margin-left: -3rem;
+                    }
+            
+                    .details{
+                        top:50%;
+                        left: -2%;
+                    }
+
+                    #sum_collections{
+                        font-size: 20px;
+                    }
+         
+                    .number{
+                        width: 10rem;
+                        margin-top: 9rem;
+                        font-size: 12px;
+                    }
+                    .dot{
+                        font-weight: 300;
+                        color: #ffffff;
+                    }
+            
+                    .words{
+                        width: 10rem;
+                        font-size: 10px;
+                    }
+
+                    .footer{
+                        height: 90%;
+                        top: 351%;
+                        left:0%;
+                        padding: 50px 40px 20px 30px;
+                    }
+            
+                    .foot{
+                        margin-left: .8rem;
+                        font-size: 10px;
+                    }
+            
+                    li{
+                        margin: .2rem;    
+                    }
+            
+                    a{
+                        margin-left: .4rem;
+                    }
+
+                    .soc{
+                        margin: .4rem; 
+                        padding: 2px;
+                        font-size:10px;
+                    }
+
+                    .platforms{
+                        margin-top: .5rem;
+                        font-size: 18px;
+                    }
+            
+                    .sign{
+                        width: 60%;
+                        top:37%;
+                        left: 7%;
+                    }
+            
+                    #signup{
+                        font-size: 10px;
+                    }
+            
+                    button{
+                        position: absolute;
+                        top: 14%;
+                        left: 83%;
+                    }
+            
+                    .copyright{
+                        width: 100%;
+                        height: auto;
+                        position: absolute;
+                        top:60%;
+                        left: 5%;
+                    }
+
+                    br{
+                        display: none;
+                    }
+                    
+                    .copyright p{
+                        margin-bottom: 2rem;
+
+                    }
+
+                    .copyright a{
+                        margin: .1rem;
+                        padding: .1rem;
+                    }
+            
+                    .accept{
+                        width: 60%;
+                        position: absolute;
+                        top: 80%;
+                        left:10%;
+                        margin: auto;
+                    }
+    
+                    .accept p{
+                        text-align: center;
+                        font-size: 12px;
+                    }
+            
+                    .cards img{
+                        margin-top: .5rem;
+                        margin-bottom: .5rem;
+                    }
+            
+        }
