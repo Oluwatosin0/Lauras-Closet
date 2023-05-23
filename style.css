@@ -6,6 +6,7 @@
 
 body{
     font-family: 'Euclid Circular A', sans-serif;
+    
     width: 100%;
     height: 100vh;
     background-color: #ffffff;
@@ -51,6 +52,7 @@ input{
     font-size: 15px;
     padding-left: .8rem; 
     border: none;
+    outline: none;
     font-weight: 200;
 }
 
@@ -132,7 +134,7 @@ header{
 }
 
 .order{
-    width:35vw;
+    width:30vw;
     height: 45vh;
     margin-top: 1rem;
     background-color: #1F2937;
@@ -144,20 +146,20 @@ header{
 }
 
 h1{
-    font-size: 60px;  
+    font-size: 50px;  
     text-align: justify;
     color: #FAFAFA; 
 }
 
 .new_arrivals{
-    font-size: 60px;
+    font-size: 50px;
     text-align: justify;
     margin-top: .5rem;
     color: #F7C59F;
 }
 
 p{
-    font-size: 20px;
+    font-size: 18px;
     margin-top: 1rem;
     margin-bottom: 3.5rem;
     color: #FAFAFA; 
@@ -208,9 +210,8 @@ p{
 
 /*This weeks highlights*/
 .container{
-    max-width: 1224px;
-    width: 90%;
-    margin: auto;  
+    width: 80%;
+    margin: 0 auto;
 }
 
 .title{
@@ -230,17 +231,54 @@ p{
         margin-bottom: 1rem;
     }
 
-    .photo-gallery{
-        width: 100%;
+    .grid-wrapper img{
+        max-width: 100%;
+        height: auto;
+        vertical-align: middle;
+        display: inline-block;
     }
 
-    .column_a{
-        margin: auto;
+    .grid-wrapper > div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
-    .photo_1{
-        width:35%;
-        float:left;
+    .grid-wrapper > div > .img1{
+        width: 60%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .grid-wrapper > div > .img2{
+        width: auto;
+        height: auto;
+        margin-right: 14rem;
+        object-fit: cover;
+    }
+
+    .grid-wrapper > div > .img3{
+        width: auto;
+        height: auto;
+        margin-left: 16rem;
+        margin-top: 1rem;
+        object-fit: cover;
+    }
+
+    .grid-wrapper > div > .img4{
+        width: 60%;
+        height: auto;
+        margin-left: 2rem;
+        margin-top: -1rem;
+        object-fit: cover;
+    }
+
+    .grid-wrapper{
+        display: grid;
+        grid-gap:10px;
+        grid-template-columns: 1fr 1fr ;
+        grid-auto-flow: dense;
+        margin-bottom: 6rem;
     }
 
     .exclusive{
@@ -250,96 +288,87 @@ p{
         background-color: transparent;
         position: absolute;
         top: 128%;
-        left: 16%;  
+        left: 20%;  
     }
-
+    
     .ex{
-        font-size: 50px;
+        font-size: 40px;
         color: #ffffff;
+        text-shadow: 1px 1px 1px #9e9898;
         font-weight: 600;
         text-align: center;
-        margin-left: 3.5rem;
+        margin-left: 4rem;
     }
 
-    .shoes{
-        width:14vw;
-        height: 13vh;
-        position: absolute;
-        top: 130%;
-        right: 32%;
-        background-color: rgba(36, 34, 34, 0.5);
-    }
-
-    .es{
-        font-size: 15px;
-        color: #ffffff;
-        font-weight: 500;
-        margin-left: 1rem;    
-    }
-
-    .price{
-        font-size: 10px;
-        margin-top: -3.1rem;
+    .shift{
         margin-left: 1rem;
-        opacity: 0.7;
     }
 
-    .off{
-        font-size: 14px;
-        margin-top: -2.8rem;
-        margin-left: 1rem;
-        color: #ffffff;
-        opacity: 0.7;
-    }
+    
+.shoes{
+    width:12vw;
+    height: 10vh;
+    position: absolute;
+    top: 95%;
+    right: 30%;
+    background-color: rgba(36, 34, 34, 0.5);
+}
 
-    .photo_2{
-        width: 60%;
-        float: right;
-    }
+.es{
+    font-size: 12px;
+    color: #ffffff;
+    font-weight: 600;
+    margin-left: 1rem;    
+}
 
-    .collection{
-        width:35vw;
-        height: 25vh;
-        margin-top: 1rem;
-        background-color: transparent;
-        position: absolute;
-        top: 130%;
-        left: 45%;  
-    }
+.price{
+    font-size: 10px;
+    margin-top: -3.1rem;
+    margin-left: 1rem;
+    opacity: 0.7;
+}
+
+.off{
+    font-size: 13px;
+    margin-top: -3rem;
+    margin-left: 1rem;
+    color: #ffffff;
+    opacity: 0.7;
+}
+.collection{
+    width:35vw;
+    height: 25vh;
+    margin-top: 1rem;
+    background-color: transparent;
+    position: absolute;
+    top: 130%;
+    left: 45%;  
+}
 
     .styles{
-    font-size: 50px;
+    font-size: 40px;
     font-stretch: expanded;
     color: #ffffff;
+    text-shadow: 1px 1px 1px #9e9898;
     font-weight: 600;
     text-align: center;
     margin-left: 3.5rem;
     }
 
     .shoe{
-        width:17vw;
-        height: 13vh;
+        width:15vw;
+        height: 11vh;
         position: absolute;
-        top: 122%;
-        left: -5%;
+        top: 85%;
+        left: -3%;
         background-color: rgba(36, 34, 34, 0.5);;
     }
 
     .esc{
-        font-size: 15px;
+        font-size: 14px;
         color: #ffffff;
-        font-weight: 500;
+        font-weight: 600;
         margin-left: 1rem; 
-    }
-
-    .column_b{
-        position:absolute;
-        top: 181%;
-    }
-    
-    .photo_3{
-        width:60%;
-        float:left;
     }
 
     .new{
@@ -348,88 +377,85 @@ p{
         margin-top: 1rem;
         background-color: transparent;
         position: absolute;
-        top: 30%;
-        left: 4%;  
+        top: 180%;
+        left: 19%;  
     }
-
+    
     .Arrival{
-    font-size: 50px;
+    font-size: 40px;
     font-stretch: expanded;
     color: #ffffff;
     font-weight: 600;
+    text-shadow: 1px 1px 1px #9e9898;
     text-align: center;
-    margin-left: 3.5rem;
+    margin-left: .1rem;
     }
-
+    
     .sho{
-        width:14vw;
-        height: 13vh;
+        width:12vw;
+        height: 10vh;
         position: absolute;
         top: 115%;
-        right: 66%;
+        left: -1%;
         background-color: rgba(36, 34, 34, 0.5);
     }
-
+    
     .na{
-        font-size: 15px;
+        font-size: 13px;
         color: #ffffff;
-        font-weight: 500;
+        font-weight: 600;
         margin-left: 1rem; 
     }
 
-    .photo_4{
-        width: 36%;
-        float: right;
-    }
-
-   
+    
     .item{
         width:15vw;
         height: 25vh;
         margin-top: 1rem;
         background-color: transparent;
         position: absolute;
-        top: 22%;
-        right: 10%;  
+        top: 178%;
+        right: 25%;  
     }
 
     .Exc{
-    font-size: 50px;
+    font-size: 40px;
     font-stretch: expanded;
     color: #ffffff;
+    text-shadow: 1px 1px 1px #9e9898;
     font-weight: 600;
     text-align: center;
     margin-left: 3.5rem;
     }
 
     .sh{
-        width:15vw;
-        height: 13vh;
+        width:12vw;
+        height: 10vh;
         position: absolute;
-        top: 135%;
-        right: 25%;
+        top: 115%;
+        right: 20%;
         background-color: rgba(36, 34, 34, 0.5);
     }
 
     .ei{
-        font-size: 15px;
+        font-size: 13px;
         color: #ffffff;
-        font-weight: 500;
+        font-weight: 600;
         margin-left: 1rem;  
     }
 
+   
     /*popular this week*/
     .Container{
-        max-width: 1224px;
-        width: 90%;
-        position: absolute;
-        top: 260%;
-        left: 12%;
-        margin: auto;
+        width: 80%;
+        margin: 0 auto;
     }
 
     .girls{
         display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 4rem;
     }
 
     .pic{
@@ -439,14 +465,14 @@ p{
     .strip{
         font-size: 15px;
         font-weight: 400;
-        color: #374151; ;    
+        color: #374151;     
     }
 
     .peplum{
         font-size: 15px;
         font-weight: 400;
         margin-top: -3.5rem;
-        color: #374151; ;   
+        color: #374151;  
     }
 
     #price{
@@ -465,41 +491,42 @@ p{
 
     .add{
         margin-left: 3.5rem;
+        font-size: 14px;
+        font-weight: 700;
+        color: #000000;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
     }
 
     /*BRANDS FOR YOU*/
     .COntainer{
-            max-width: 1224px;
-            width: 90%;
-            position: absolute;
-            top: 345%;
-            left: 12%;
-            margin: auto;
+            width: 80%;
+            margin: 0 auto;
         }
     
         #brands{
-            margin-top: 1rem;
-            margin-bottom: 8rem;
+            margin-bottom: 5rem;
             display: flex;
             justify-content: space-evenly;
             align-items: center;
         }
 
+        .summer{
+            margin-bottom: 7rem;
+        }
+
         .details{
             width: 40%;
             height: 50%;
-            position: absolute;
-            top: 60%;
-            left: 5%;
-        }
-
-        .summer{
-            margin-top: 4rem;
+            margin-top: -23rem;
+            margin-left: 5rem;
         }
 
         #sum_collections{
             color: #0D3F64;
-            margin-bottom: 1.5rem;
+            margin-bottom: 2rem;
+            
         }
 
         .coll{
@@ -523,7 +550,7 @@ p{
             width: 18rem;
             display: flex;
             justify-content: space-between;
-            margin-top: 10rem;
+            margin-top: 12rem;
             margin-bottom: 0;
             font-size: 16px;
             font-weight: 600;
@@ -544,20 +571,17 @@ p{
         /*FOOTER*/
         .footer{
             width: 100%;
-            height: 60%;
+            height: auto;
             background-color: #F9FAFB;
-            position: absolute;
-            top: 470%;
-            left:0%;
+            padding: 50px 100px 50px 100px;
+        }
+
+        #footer{
             display: flex;
             justify-content: space-evenly;
-            flex-wrap: wrap;
-            padding: 50px 100px 20px 100px;
         }
 
         .foot{
-            display: flex;
-            flex-direction: column;
             list-style-type: none;
             color:#000308;
             font-weight: 700;
@@ -583,12 +607,13 @@ p{
         }
 
         .soc{
-            margin: 1rem; 
+            width: 20%;
+            margin: .5rem; 
             border-radius: 50px;
-            padding: 3px;
+            padding: 4px;
             background-color: #000000;
             border: 1px solid #000000;
-            font-size:10px;
+            font-size:8px;
             color: #ffffff;
         }
 
@@ -601,12 +626,11 @@ p{
         }
 
         .sign{
-            width: 30%;
-            height: auto;
+            width: 40%;
             float: right;
-            position: absolute;
-            top:30%;
-            right: 12%;
+            margin-top: -6.5rem;
+            margin-right: -2rem;
+           
         }
 
         #signup{
@@ -646,18 +670,17 @@ p{
         }
 
         .copyright{
-            width: 25%;
+            width: 30%;
             height: auto;
-            position: absolute;
-            top:70%;
-            left: 13%;
+            margin-top: 5rem;
+            margin-left: 7rem;
         }
 
         .copyright p{
             color:#6B7280;
             font-size: 12px;
             font-weight: 500;
-            margin: 0;
+            margin-bottom: 2rem;
         }
 
         .copyright a{
@@ -671,9 +694,9 @@ p{
 
         .accept{
             width: 30%;
-            position: absolute;
-            top: 65%;
-            right:12%;
+            float: right;
+            margin-top: -7rem;
+            margin-right: 6rem;
         }
 
         .accept p{
@@ -692,7 +715,315 @@ p{
         }
         /*end of footer*/
 
-        @media only screen and (max-width: 700px){
+        /*************/
+        /* PRODUCT LANDING PAGE*/
+        /*ladies*/
+        .ladies{
+            width: 95%;
+            height: 12%;
+            margin: auto;
+            background-color: #111827;
+        }
+
+        #top{
+           float: right;
+            width: 63%;
+        }
+
+        .top{
+         font-size: 14px;
+         font-weight: 600;
+         color: #ffffff;  
+         padding-top: 1.5rem;
+         margin-left: 1.5rem;
+         margin-bottom: -.2rem;  
+        }
+
+        .sales{
+            font-size: 12px;
+            color: #b8bbc0;
+            margin-left: 1.5rem;   
+        }
+        
+        #read{
+            font-weight: 600;
+            color: #ffffff;
+        }
+
+        #showing{
+            margin-top: 2rem;
+        }
+
+        #showing p{
+            color: #000000;
+            font-size: 12px;
+            margin-left: 3rem;
+        }
+
+        .sort{
+            float: right;
+            margin-right: 3rem;
+        }
+        
+        .sort img{
+            width: 9px;
+        }
+        /*SIDE BAR*/
+        .sidebar{
+            width: 100%;
+            height: 150%;
+            margin-bottom: 25rem;  
+        }
+ 
+        .diva{
+            width:20%;
+            height:125%;
+            float: left;
+            background-color: #F9FAFB;
+            margin-left: 5rem;
+            padding: 1.5rem; 
+           
+        }
+
+        .head{
+            font-size: 16px;
+            color: #000000;
+            margin: .3rem;
+            font-weight: 800;
+            margin-left: 1rem;
+        }
+        
+        #prices p{
+            font-size: 14px;
+            color: #000000;
+            margin-left: .7rem;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .right{
+            float: right;
+            margin-right: 1rem;
+            font-weight: 500;
+        }
+        
+        #prices img{
+            width: 85%;
+            margin-left: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .filters img{
+            width: 7%;
+        }
+        
+        .filters input{
+            width: 14px;
+            margin: .9rem;   
+        }
+        
+        .filters span{
+            font-size: 14px;
+        }
+        
+        .brands{
+            margin-top: 1rem;
+        }
+        
+        .brands input{
+            width: 14px;
+            margin: .9rem;  
+        }
+        
+        .brands span{
+            font-size: 14px;
+        }
+        
+        .brands .num{
+            color: #EB5757;
+            font-size: 14px;
+            font-weight: 500;
+            margin-left: 2rem; 
+        }
+        
+        .categories{
+            margin-top: -1.8rem;
+        }
+        
+        .categories input{
+            width: 14px;
+            margin: .9rem;  
+        }
+        
+        .categories span{
+            font-size: 14px;
+        }
+        
+        .categories .num{
+            color: #EB5757;
+            font-size: 14px;
+            font-weight: 500;
+            margin-left: 2rem; 
+        }
+        
+        .size{
+            margin-top: -1.8rem;
+        }
+        
+        .size input{
+            width: 14px;
+            margin: .9rem;  
+        }
+        
+        .size span{
+            font-size: 14px;
+        }
+
+        /*SIDE BAR2*/
+        .div_b{
+            width: 70%;
+            height: 125%;
+            float: right;  
+            margin-right: 3rem;
+        }
+
+        .wrapper{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: -.5rem;
+        }
+
+        .wrapper div{
+            height:480px;
+            margin-top: .6rem;
+            margin-left: 2.5rem;
+            border:1px solid #b8bbc0;
+        }
+
+        #heart{
+            position:absolute;
+            margin-left: -4rem;
+            margin-top: 1rem;
+        }
+
+        .striped{
+            text-align: justify;
+            color: #1F2937;
+            font-size: 15px;
+            font-weight: 500;
+            margin-left: 1rem;
+            
+        }
+
+        .peplums{
+            text-align: justify;
+            color: #1F2937;
+            font-size: 15px;
+            font-weight: 500;
+            margin-top: -3.2rem;
+            margin-left: 1rem;
+        }
+
+        #priced{
+            margin-top: -3rem;
+            text-align: justify;
+            color: #1F2937;
+            font-size: 17px;
+            font-weight: 600;
+            margin-left: 1rem;
+        }
+
+        .amt{
+            font-size: 17px;
+            float:right;
+            color:#4B5563;
+            font-weight: lighter;
+            margin-right: 1rem;
+        }
+
+        #slash{
+            margin-top: -3.4rem;
+            margin-bottom: 1rem;
+        }
+
+        .slashed{
+            margin-left: .8rem;
+            font-size: 17px;
+            color: #b8bbc0;
+            text-decoration: line-through;
+            font-weight: lighter;
+
+        }
+
+        .border{
+            float: right;
+            margin-right: 1rem;
+            background-color: #000000;
+            color: #ffffff;
+            font-size: 12px;
+            padding: .2rem .8rem;
+        }
+
+        .page_num{
+            width: 5%;
+            height: 6%;
+            font-size: 15px;
+            float: right;
+            margin-top: -6rem;
+            margin-right: 17rem;
+            display: flex;
+        }
+
+        #none{
+            border: 1px solid #000000;
+            padding: .5rem;
+            margin: .3rem;
+        }
+
+        .black{
+            background-color: #000000;
+            padding: .5rem;
+            margin: .3rem;
+        }
+
+        .black i{
+            font-weight: bolder;
+            color: #ffffff;
+            font-size: 20px;  
+        }
+
+        .grey{
+            background-color: #D1D5DB;
+            padding: .5rem;
+            margin: .3rem;
+        }
+
+        .grey i{
+            font-weight: bolder;
+            font-size: 20px;  
+        }
+
+      
+
+
+
+       
+      
+
+
+
+        
+
+       
+
+       
+        
+
+       
+
+        @media screen and (max-width: 700px){
             .nav{
                 display: flex;
             }
