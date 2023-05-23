@@ -59,7 +59,7 @@
                     <h1>Get up to 30% off </h1>
                     <h2 class="new_arrivals">New Arrivals</h2>
                     <p>Introducing our latest collection of products</p>
-                    <a href="#" id="order">PLACE YOUR ORDER <i id="arr" class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                    <a href="product.html" id="order">PLACE YOUR ORDER <i id="arr" class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
                     
                 </div>
             </div>
@@ -76,23 +76,21 @@
     <section>
             <div class="container">
                 <h3 class="title">THIS WEEKS HIGHLIGHTS <hr></h3>
-                <div id="slider" class="photo-gallery">
-                    <figure>
-                    <div class="column_a">
-                        <div class="photo_1">
-                            <img src="./images/exclusive shoes.png" alt="shoes">
-                            <div class="exclusive">
-                                <p class="ex">Exclusive Shoes</p>
+                <div id="slider" class="grid-wrapper">
+                        <div>
+                            <img class="img1" src="./images/exclusive shoes.png" alt="shoes">
+                           <div class="exclusive">
+                                <p class="ex">Exclusive <span class="shift">Shoes</span></p>
                                 <div class="shoes">
                                     <p class="es">Exclusive Shoes</p>
                                     <p class="price">PRICE 20% OFF</p>
                                     <p class="off">DISCOUNT CODE-VATR3920</p>
                                 </div>
                             </div>
-                           
                         </div>
-                        <div class="photo_2">
-                            <img src="./images/exquisite styles.png" alt="styles">
+
+                        <div>
+                            <img class="img2" src="./images/exquisite styles.png" alt="styles">
                             <div class="collection">
                                 <p class="styles">Exquisite Styles & Collections</p>
                                 <div class="shoe">
@@ -102,11 +100,9 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="column_b">
-                        <div class="photo_3">
-                            <img src="./images/New Arrivals.png" alt="new arrivals">
+                        <div>
+                            <img class="img3" src="./images/New Arrivals.png" alt="new arrivals">
                             <div class="new">
                                 <p class="Arrival">New Arrivals</p>
                                 <div class="sho">
@@ -116,8 +112,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="photo_4">
-                            <img src="./images/exclusive Items.png" alt="items">
+
+                        <div>
+                            <img class="img4" src="./images/exclusive Items.png" alt="items">
                             <div class="item">
                                 <p class="Exc">Exclusive Items</p>
                                 <div class="sh">
@@ -127,10 +124,10 @@
                                 </div>
                             </div>
                         </div>
+                </div>
                     </div>
-                </div>
-                </figure> 
-                </div>
+                 
+
     </section>
 
     <!--POPULAR THIS WEEK-->
@@ -139,7 +136,7 @@
     <h3 class="title">POPULAR THIS WEEK <hr></h3>
     <div class="girls">
         <div class="pic">
-            <img  src="./images/girl1.png" alt="girl1">
+            <img src="./images/girl1.png" alt="girl1">
             <p class="strip">Striped Flutter Sleeve Overlap Collar</p>
             <p class="peplum">Peplum Hem Blouse</p>
             <p id="price">$120.23 <span class="slash">$120.23</span><span class="add">+ Add to Basket</span></p>
@@ -160,7 +157,7 @@
         <img src="./images/girl4.png" alt="girl4">
         <p class="strip">Striped Flutter Sleeve Overlap Collar</p>
             <p class="peplum">Peplum Hem Blouse</p>
-            <p id="price">$105.23 <span class="slash">$120.23</span><span class="add">+ Add to Basket</span></p>
+            <p id="price">$105.23 <span class="slash">$120.23</span><button class="add">+ Add to Basket</button></p>
     </div>
     </div>
 </div>
@@ -182,7 +179,7 @@
                 <img src="./images/summer.png" alt="summer">
                 <div class="details">
                     <h2 id="sum_collections">SUMMER <span class="coll">COLLECTIONS<i class="fa-solid fa-arrow-right-long"></i></span></h2>
-                    <a href="#" class="now">SHOP NOW <i id="shop" class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                    <a href="product.html" class="now">SHOP NOW <i id="shop" class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
                     <p class="number">
                         <span> 07 </span> 
                         <span class="dot"> : </span>
@@ -207,6 +204,7 @@
     <!--FOOTER-->
     <footer>
         <div class="footer">
+        <div id="footer">
             <ul><span class="foot">COMPANY INFO</span>
                 <li><a href="#">AboutLaura's Closet</a></li>
                 <li><a href="#">Social Responsibility</a></li>
@@ -231,7 +229,7 @@
 
             <div class="foot">SOCIALS
                 <div class="socials">
-                <i class="soc fa fa-facebook" aria-hidden="true"></i>
+                <i class="soc fa fa-linkedin" aria-hidden="true"></i>
                 <i class="soc fa fa-twitter" aria-hidden="true"></i>
                 <i class="soc fa fa-instagram" aria-hidden="true"></i>
                 <i class="soc fa fa-whatsapp" aria-hidden="true"></i>
@@ -245,6 +243,7 @@
                 <i  class="plat fa fa-apple" aria-hidden="true"></i>
              </div>
             </div>
+        </div>
             <div class="sign">
                 <p id="signup">SIGN UP FOR LAURA'S CLOSET STYLE NEWS</p>
                 <input class="in" type="text" placeholder="Your email">
@@ -252,7 +251,7 @@
                 <p class="sub">By clicking the SUBSCRIBE button, you are agreeing on our <a id="cookie" href="#">Privacy & Cookie Policy</a></p>
             </div>
             <div class="copyright">
-                <p>&copy 2010 - 2022 Laura's Closet All Rights Reserved</p><br>
+                <p>&copy 2010 - 2022 Laura's Closet All Rights Reserved</p>
                 <a href="#">Privacy Center</a>
                 <a href="#">Privacy & Cookie Policy</a>
                 <a href="#">Manage Cookies</a><br><br>
