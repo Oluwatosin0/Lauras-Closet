@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.css">
+    <link href="https://fonts.cdnfonts.com/css/euclid-circular-a" rel="stylesheet">
+    <title>Product Listing Page</title>
+</head>
+<body>
+    <!--NAVBAR-->
+    <div class="nav">
+        <div class="bars">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+        <p class="logo">Laura's Closet</p>
+                <i class="fa fa-search" id="glass" aria-hidden="true"></i>
+            <input type="text" placeholder="Search for an item...">
+            <div class="others">
+                <a class="link" href="#store">Store</a>
+                <a class="link"href="#account">Account</a>
+                <a class="link"href="#wishlist">WishList</a>
+                <a class="link" href="#basket"><span class="bold">Basket</a></span>           
+            </div>
+            <img class="basket" src="./images/shopping-basket 1.png" alt="basket">
+        </div>
+    
+    <!--HEADER-->
+        <header>
+            <ul class="items">
+                <li><a href="#">New Arrivals</a></li>
+                <li><a href="#"><span class="active">#Fresh</a></span></li>
+                <li><a href="#">Dresses</a></li>
+                <li><a href="#">Tops</a></li>
+                <li><a href="#">Jackets</a></li>
+                <li><a href="#">Lingerie & Lounge Wear</a></li>
+                <li><a href="#">Beach Wear</a></li>
+                <li><a href="#">Blouse</a></li>
+                <li><a href="#">Denim</a></li>
+                <li><a href="#">Vintage</a></li>
+                <li><a href="#">Shoes</a></li>                                              
+                <li><a href="#">Sandals</a></li>
+                <li><a href="#">Bags</a></li>
+                <li><a href="#">Jewelries</a></li>
+            </ul>
+        </header>
+        
+        <!--LADIES TOP-->
+        <div class="ladies">
+            <img id="top" src="./images/ladies.png" alt="top">
+            <span id="text">
+            <p class="top">Ladies top</p>
+            <p class="sales">Slash Sales begins in April. Get upto 80% discount on all products <a  id="read" href="#"> Read more</a></p>
+        </span>
+        </div>
+
+        <div id="showing">
+            <p ><b>Showing  1 - 20</b> of 2,356 products <span class="sort">Sort by: <b>New Arrivals</b> <img src="./images/arr down.png" alt=""></i></span></p>
+        </div>
+
+        <!---SIDE BAR-->
+        <div class="sidebar">
+        <div class="diva">
+            <div id="prices">
+                <ul class="head">PRICES</ul>
+                <p>Range <span class="right">$120 - $300</span></p>
+                <img src="./images/slider.png" alt="">
+            </div>
+            <div class="filters">
+                <p class="head">FILTERS</p>
+                <input type="checkbox" name="women" value="filters"> <span>Women</span>  <br>
+                <input type="checkbox" name="ladies" value="filters">  <span>Ladies</span>  <br>
+                <input type="checkbox" name="girls" value="filters">  <span>Girls</span>  <br>
+                <input type="checkbox" name="babies" value="filters"> <span>Babies</span>  
+            </div>
+            <div class="brands">
+                <p class="head">BRANDS</p>
+                <input type="checkbox" name="hm" value="brands"> <span>H&M </span> <br>
+                <input type="checkbox" name="ms" value="brands">  <span>Mark & Spencer</span> <br>
+                <input type="checkbox" name="vs" value="brands"> <span>Victoria's Secret </span> <br>
+                <input type="checkbox" name="dior" value="brands"> <span>Dior</span>   <br>
+                <input type="checkbox" name="gucci" value="brands"> <span>Gucci</span>  <br>
+                <input type="checkbox" name="fendi" value="brands"> <span>Fendi</span>  <br>
+                <input type="checkbox" name="prada" value="brands"> <span> Prada</span> <br>
+                <input type="checkbox" name="versace" value="brands"> <span>Versace</span>  <br>
+                <input type="checkbox" name="dg" value="brands"> <span>Dolce & Gabbana</span>   <br>
+                <input type="checkbox" name="zara" value="brands"> <span>Zara</span>  <br>
+                <input type="checkbox" name="chanel" value="brands">  <span>Chanel</span>  <br>
+                <p class="num">+234 more</p>
+            </div>
+            <div class="categories">
+                <p class="head">CATEGORIES</p>
+                 <input type="checkbox"> <span>Dresses</span>  <br>
+                 <input type="checkbox">  <span>Tops</span> <br>
+                 <input type="checkbox"> <span>Lingerie & Lounge wear</span>  <br>
+                 <input type="checkbox">  <span>Blouse</span> <br>
+                 <input type="checkbox">  <span>Vintage</span> <br>  
+                <p class="num">+4 more</p>
+            </div>
+            <div class="size">
+                <p class="head">SIZE</p>
+              <input type="checkbox" name="medium" value="size"> <span>Medium </span> <br>
+              <input type="checkbox" name="medium" value="size">  <span>Large</span> <br>
+              <input type="checkbox" name="medium" value="size">  <span>Plus Size</span> <br>
+              <input type="checkbox" name="medium" value="size"> <span>Sexy Plus Size </span><br>  
+            </div>
+        </div>
+
+        <!--SIDE BAR2-->
+        <div class="div_b">
+        <div class="wrapper">
+            <div class="A">
+            <img src="./images/girl2.png" alt="">
+            <img id="heart" src="./images/heart.png" alt="">
+            <p class="striped">Striped Flutter Sleeve Overlap Collar</p>
+            <p class="peplums">Peplum Hem Blouse</p>
+            <p id="priced">$120.23 <span class="amt">24 orders</span></p>
+            <p id="slash"><span class="slashed">$120.23</span><span class="border">New Arrivals</span></p>
+            </div>
+            <div class="B">
+                <img src="./images/girl2.png" alt="">
+                <img id="heart" src="./images/heart.png" alt="">
+                <p class="striped">Striped Flutter Sleeve Overlap Collar</p>
+                <p class="peplums">Peplum Hem Blouse</p>
+                <p id="priced">$120.23 <span class="amt">24 orders</span></p>
+                <p id="slash"><span class="slashed">$120.23</span></p>
+            </div>
+            <div class="C">
+                <img src="./images/girl2.png" alt="">
+                <img id="heart" src="./images/heart.png" alt="">
+                <p class="striped">Striped Flutter Sleeve Overlap Collar</p>
+                <p class="peplums">Peplum Hem Blouse</p>
+                <p id="priced">$120.23 <span class="amt">24 orders</span></p>
+                <p id="slash"><span class="slashed">$120.23</span></p>
+            </div>
+            <div class="D">
+                <img src="./images/girl2.png" alt="">
+                <p class="striped">Striped Flutter Sleeve Overlap Collar</p>
+                <p class="peplums">Peplum Hem Blouse</p>
+                <p id="priced">$120.23 <span class="amt">24 orders</span></p>
+                <p id="slash"><span class="slashed">$120.23</span></p>
+            </div>
+            <div class="E">
+                <img src="./images/girl2.png" alt="">
+                <img id="heart" src="./images/heart.png" alt="">
+                <p class="striped">Striped Flutter Sleeve Overlap Collar</p>
+                <p class="peplums">Peplum Hem Blouse</p>
+                <p id="priced">$120.23 <span class="amt">24 orders</span></p>
+                <p id="slash"><span class="slashed">$120.23</span><span class="border">New Arrivals</span></p>
+            </div>
+            <div class="F">
+                <img src="./images/girl2.png" alt="">
+                <img id="heart" src="./images/heart.png" alt="">
+            </div>
+            <div class="G">
+                <img src="./images/girl2.png" alt="">
+                <img id="heart" src="./images/heart.png" alt="">
+                <p class="striped">Striped Flutter Sleeve Overlap Collar</p>
+                <p class="peplums">Peplum Hem Blouse</p>
+                <p id="priced">$120.23 <span class="amt">24 orders</span></p>
+                <p id="slash"><span class="slashed">$120.23</span></p>
+            </div>
+            <div class="H">
+                <img src="./images/girl2.png" alt="">
+                <img id="heart" src="./images/heart.png" alt="">
+                <p class="striped">Striped Flutter Sleeve Overlap Collar</p>
+                <p class="peplums">Peplum Hem Blouse</p>
+                <p id="priced">$120.23 <span class="amt">24 orders</span></p>
+                <p id="slash"><span class="slashed">$120.23</span><span class="border">New Arrivals</span></p>
+            </div>
+            <div class="I">
+                <img src="./images/girl2.png" alt="">
+                 <img id="heart" src="./images/heart.png" alt="">
+                 <p class="striped">Striped Flutter Sleeve Overlap Collar</p>
+                 <p class="peplums">Peplum Hem Blouse</p>
+                 <p id="priced">$120.23 <span class="amt">24 orders</span></p>
+                 <p id="slash"><span class="slashed">$120.23</span></p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="page_num">
+    <div class="grey">
+        <i class="fa fa-angle-left" aria-hidden="true"></i>
+    </div>
+    <div id="none">
+        <span>1</span>
+    </div>
+    <div id="none">
+        <span>2</span>
+    </div>
+    <div id="none">
+        <span>3</span>
+    </div>
+    <div id="none">
+        <span>...</span>
+    </div>
+    <div id="none">
+        <span>13</span>
+    </div>
+    <div class="black">
+        <i class="fa fa-angle-right" aria-hidden="true"></i>
+    </div>
+    </div>
+
+    <!--FOOTER-->
+    <footer>
+        <div class="footer">
+        <div id="footer">
+            <ul><span class="foot">COMPANY INFO</span>
+                <li><a href="#">AboutLaura's Closet</a></li>
+                <li><a href="#">Social Responsibility</a></li>
+                <li><a href="#">Affiliate</a></li>
+                <li><a href="#">Fashion Blogger</a></li>
+            </ul>
+
+            <ul><span class="foot">HELP & SUPPORT</span>
+                <li><a href="#">Shipping Info</a></li>
+                <li><a href="#">Returns</a></li>
+                <li><a href="#">How to Order</a></li>
+                <li><a href="#">How to Track</a></li>
+                <li><a href="#">Size Chart</a></li>
+            </ul>
+
+            <ul><span class="foot">CUSTOMER CARE</span>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Payment</a></li>
+                <li><a href="#">Bonus Point</a></li>
+                <li><a href="#">Notices</a></li>
+            </ul>
+
+            <div class="foot">SOCIALS
+                <div class="socials">
+                <i class="soc fa fa-linkedin" aria-hidden="true"></i>
+                <i class="soc fa fa-twitter" aria-hidden="true"></i>
+                <i class="soc fa fa-instagram" aria-hidden="true"></i>
+                <i class="soc fa fa-whatsapp" aria-hidden="true"></i>
+                <i class="soc fa fa-snapchat-ghost" aria-hidden="true"></i>
+            </div>
+            </div>
+
+             <div class="foot">PLATFORMS
+             <div class="platforms">
+                <i  class="plat fa fa-android" aria-hidden="true"></i>
+                <i  class="plat fa fa-apple" aria-hidden="true"></i>
+             </div>
+            </div>
+        </div>
+            <div class="sign">
+                <p id="signup">SIGN UP FOR LAURA'S CLOSET STYLE NEWS</p>
+                <input class="in" type="text" placeholder="Your email">
+                <button>SUBSCRIBE</button>
+                <p class="sub">By clicking the SUBSCRIBE button, you are agreeing on our <a id="cookie" href="#">Privacy & Cookie Policy</a></p>
+            </div>
+            <div class="copyright">
+                <p>&copy 2010 - 2022 Laura's Closet All Rights Reserved</p>
+                <a href="#">Privacy Center</a>
+                <a href="#">Privacy & Cookie Policy</a>
+                <a href="#">Manage Cookies</a><br><br>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Copyright Notice</a>
+                <a href="#">Imprint</a>
+            </div>
+            <div class="accept">
+                <p>WE ACCEPT</p>
+                <div class="cards">
+                    <img src="./images/AliPay.jpg" alt="pay">
+                    <img src="./images/Amazon.jpg" alt="pay">
+                    <img src="./images/American Express.jpg" alt="pay">
+                    <img src="./images/ApplePay.jpg" alt="pay">
+                    <img src="./images/Bitcoin.jpg" alt="pay">
+                    <img src="./images/BitPay.jpg" alt="pay">
+                    <img src=".//images/Discover.jpg" alt="pay">
+                    <img src="./images/eBay.jpg" alt="pay">
+                    <img src="./images/Google Pay.jpg" alt="pay">
+                    <img src="./images/MasterCard.jpg" alt="pay">
+                    <img src="./images/monobank.jpg" alt="pay">
+                    <img src="./images/Payoneer.jpg" alt="pay">
+                    <img src="./images/PayPal.jpg" alt="pay">
+                    <img src="./images/Western Union.jpg" alt="pay">
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+<script src="./script.js"></script>
+</body>
+</html>
+
