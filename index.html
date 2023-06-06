@@ -14,20 +14,48 @@
 
     <!--NAVBAR-->
    <div class="nav">
-    <div class="bars">
-        <i class="fa fa-bars" aria-hidden="true"></i>
-    </div>
     <p class="logo">Laura's Closet</p>
-            <i class="fa fa-search" id="glass" aria-hidden="true"></i>
-        <input type="text" placeholder="Search for an item...">
-        <div class="others">
+            <i class="fa fa-search" id="glass" aria-hidden="true">
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for an item..."></i>
+        <div class="bars">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+        <div class="others ">
             <a class="link" href="#store">Store</a>
             <a class="link"href="#account">Account</a>
             <a class="link"href="#wishlist">WishList</a>
-            <a class="link" href="#basket"><span class="bold">Basket</a></span>           
+            <a class="link" href="#bas"><span class="bold">Basket</a></span>           
         </div>
-        <img class="basket" src="./images/shopping-basket 1.png" alt="basket">
+        <a href="#"><img class="basket" src="./images/shopping-basket 1.png" alt="basket"></a>
+<!--Basket-->
+        <div id="basket">
+            <h2 id="basket-title">Your Basket</h2>
+            <div class="basket-content">
+                <div class="basket-box">
+                    <img src="images/girl1.png" alt="pic" class="baske">
+                    <div class="detail-box">
+                    <div class="basket-product-title">Flutter Hoddie</div>
+                    <div class="basket-price">$120.23</div>
+                    <input type="number" value="1" class="basket-quantity">
+                    </div>
+                    <!--Remove basket-->
+                    <i class="fa fa-trash  basket-remove" aria-hidden="true"></i>
+                </div>
+    
+                
+            </div>
+            <!--Total-->
+            <div class="total">
+                <div class="total-title">Total</div>
+                <div class="total-price">$0</div>
+            </div>
+            <!--Buy button-->
+            <button type="button" class="btn-buy">Buy Now</button>
+            <!--Cart Close-->
+            <i class="fa fa-times" aria-hidden="true" id="close-basket"></i>
+        </div>
     </div>
+   
 
 <!--HEADER-->
     <header>
@@ -75,8 +103,8 @@
     <!--WEEK HIGHLIGHTS-->
     <section>
             <div class="container">
-                <h3 class="title">THIS WEEKS HIGHLIGHTS <hr></h3>
-                <div id="slider" class="grid-wrapper">
+                <h3 class="section-title">THIS WEEKS HIGHLIGHTS <hr></h3>
+                <div  class="grid-wrapper">
                         <div>
                             <img class="img1" src="./images/exclusive shoes.png" alt="shoes">
                            <div class="exclusive">
@@ -84,7 +112,7 @@
                                 <div class="shoes">
                                     <p class="es">Exclusive Shoes</p>
                                     <p class="price">PRICE 20% OFF</p>
-                                    <p class="off">DISCOUNT CODE-VATR3920</p>
+                                    <p class="off">DISCOUNT CODE - VATR3920</p>
                                 </div>
                             </div>
                         </div>
@@ -96,7 +124,7 @@
                                 <div class="shoe">
                                     <p class="esc">Exquisite Styles & Collections</p>
                                     <p class="price">PRICE 20% OFF</p>
-                                    <p class="off">DISCOUNT CODE-VATR3920</p>
+                                    <p class="off">DISCOUNT CODE - VATR3920</p>
                                 </div>
                             </div>
                         </div>
@@ -108,7 +136,7 @@
                                 <div class="sho">
                                     <p class="na">New Arrivals</p>
                                     <p class="price">PRICE 20% OFF</p>
-                                    <p class="off">DISCOUNT CODE-VATR3920</p>
+                                    <p class="off">DISCOUNT CODE - VATR3920</p>
                                 </div>
                             </div>
                         </div>
@@ -120,7 +148,7 @@
                                 <div class="sh">
                                     <p class="ei">Exclusive Items</p>
                                     <p class="price">PRICE 20% OFF</p>
-                                    <p class="off">DISCOUNT CODE-VATR3920</p>
+                                    <p class="off">DISCOUNT CODE - VATR3920</p>
                                 </div>
                             </div>
                         </div>
@@ -131,42 +159,40 @@
     </section>
 
     <!--POPULAR THIS WEEK-->
-    <section>
-<div class="Container">
-    <h3 class="title">POPULAR THIS WEEK <hr></h3>
-    <div class="girls">
-        <div class="pic">
-            <img src="./images/girl1.png" alt="girl1">
-            <p class="strip">Striped Flutter Sleeve Overlap Collar</p>
-            <p class="peplum">Peplum Hem Blouse</p>
-            <p id="price">$120.23 <span class="slash">$120.23</span><span class="add">+ Add to Basket</span></p>
+    <section class="shop Container">
+        <h3 class="section-title">POPULAR THIS WEEK <hr></h3>
+    <div class="shop-content">
+        <div class="product-box">
+        <img src="./images/girl1.png" alt="girl1" class="product-image">
+        <h2 class="product-title"> Flutter Hoodie </h2>
+        <span class="product-price">$120.23 <span class="slash">$120.23</span></span>
+        <a  class="add-cart" href="#"><img src="./images/shopping-basket 1.png" alt="basket"></a>
         </div>
-    <div class="pic">
-        <img src="./images/girl2.png" alt="girl2">
-        <p class="strip">Striped Flutter Sleeve Overlap Collar</p>
-            <p class="peplum">Peplum Hem Blouse</p>
-            <p id="price">$90.00 <span class="slash">$100.00</span><span class="add">+ Add to Basket</span></p>
+        <div class="product-box">
+        <img src="./images/girl2.png" alt="girl2" class="product-image">
+        <h2 class="product-title">Sleeve Overlap Collar</h2>
+        <span class="product-price">$90.00 <span class="slash">$100.00</span></span>
+        <a class="add-cart" href="#"><img  src="./images/shopping-basket 1.png" alt="basket"></a>
+        </div>
+        <div class="product-box">
+        <img src="./images/girl3.png" alt="girl3" class="product-image">
+        <h2 class="product-title">Striped Flutter Pant </h2>
+        <span class="product-price">$140.24 <span class="slash">$150.11</span></span>
+        <a class="add-cart" href="#"><img  src="./images/shopping-basket 1.png" alt="basket"></a>
+        </div>
+         <div class="product-box">
+        <img src="./images/girl4.png" alt="girl4" class="product-image">
+        <h2 class="product-title"> Overlap Half Top</h2>
+        <span class="product-price">$105.23 <span class="slash">$120.23</span></span>
+        <a class="add-cart" href="#"><img  src="./images/shopping-basket 1.png" alt="basket"></a>
+        </div>
     </div>
-    <div class="pic">
-        <img src="./images/girl3.png" alt="girl3">
-        <p class="strip">Striped Flutter Sleeve Overlap Collar</p>
-            <p class="peplum">Peplum Hem Blouse</p>
-            <p id="price">$140.24 <span class="slash">$150.11</span><span class="add">+ Add to Basket</span></p>
-    </div>
-    <div class="pic">
-        <img src="./images/girl4.png" alt="girl4">
-        <p class="strip">Striped Flutter Sleeve Overlap Collar</p>
-            <p class="peplum">Peplum Hem Blouse</p>
-            <p id="price">$105.23 <span class="slash">$120.23</span><button class="add">+ Add to Basket</button></p>
-    </div>
-    </div>
-</div>
     </section>
 
     <!--BRANDS FOR YOU-->
     <section>
         <div class="COntainer">
-            <h3 class="title">BRANDS FOR YOU<hr></h3>
+            <h3 class="section-title">BRANDS FOR YOU<hr></h3>
             <div id="brands">
                 <img src="./images/one.png" alt="1">
                 <img src="./images/two.png" alt="2">
@@ -206,7 +232,7 @@
         <div class="footer">
         <div id="footer">
             <ul><span class="foot">COMPANY INFO</span>
-                <li><a href="#">AboutLaura's Closet</a></li>
+                <li><a href="#">About Laura's Closet</a></li>
                 <li><a href="#">Social Responsibility</a></li>
                 <li><a href="#">Affiliate</a></li>
                 <li><a href="#">Fashion Blogger</a></li>
@@ -248,13 +274,13 @@
                 <p id="signup">SIGN UP FOR LAURA'S CLOSET STYLE NEWS</p>
                 <input class="in" type="text" placeholder="Your email">
                 <button>SUBSCRIBE</button>
-                <p class="sub">By clicking the SUBSCRIBE button, you are agreeing on our <a id="cookie" href="#">Privacy & Cookie Policy</a></p>
+                <p class="sub">By clicking the SUBSCRIBE button, you are agreeing on our<a id="cookie" href="#">Privacy & Cookie Policy</a></p>
             </div>
             <div class="copyright">
                 <p>&copy 2010 - 2022 Laura's Closet All Rights Reserved</p>
                 <a href="#">Privacy Center</a>
                 <a href="#">Privacy & Cookie Policy</a>
-                <a href="#">Manage Cookies</a><br><br>
+                <a href="#">Manage Cookies</a>
                 <a href="#">Terms & Conditions</a>
                 <a href="#">Copyright Notice</a>
                 <a href="#">Imprint</a>
@@ -280,10 +306,7 @@
                 
 
             </div>
-
         </div>
-        
-       
     </footer>
     
 
