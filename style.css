@@ -5,8 +5,7 @@
 }
 
 body{
-    font-family: 'Euclid Circular A', sans-serif;
-    
+    font-family: 'Euclid Circular A', sans-serif;    
     width: 100%;
     height: 100vh;
     background-color: #ffffff;
@@ -19,7 +18,9 @@ body{
     height: 5rem;
     padding: .5rem;
     display: flex;
-    flex-direction: row;   
+    justify-content: space-between;
+    align-items: center;
+    
 }
 
 .bars{
@@ -27,23 +28,22 @@ body{
 }
 
 .logo{
-    
     color:#111827 ;
     font-weight: bold;
     font-size: 30px;
     margin-left: 5rem;
-    margin-top: .8rem;   
+    margin-top: 3.5rem;   
 }
 
 #glass{
-    margin-top: 1.5rem;
-    margin-left: 20rem;
+    margin-top: .2rem;
+    margin-left: 5rem;
     color:#9CA3AF;
     position: relative;
     font-size: 16px;
 }
 
-input{
+#myInput{
     background-color: #f8f9fc;
     font-family: 'Euclid Circular B', sans-serif;
     margin-top: .3rem;
@@ -59,16 +59,14 @@ input{
 .others{
     width: 10rem;
     display: flex;
-    margin-left: 16rem;
+    margin-left: 5rem;
     margin-top: -.2rem;
-   
 }
     
 .link{
     text-decoration: none;
     color:#6B7280;
-    margin-left: 1.5rem;
-    margin-top: 1.2rem;
+    margin-right:2rem;
     padding: .5rem;
     font-size: 15px;
     font-weight: 400;
@@ -81,10 +79,123 @@ input{
 }
 
 .basket{
-    width:25px;
+    width: 20px;
     height:23px;
-    margin-top: 1.2rem;
-    margin-left: 13rem;
+    margin-top: -.5rem;
+    margin-right: 3rem;
+}
+
+#basket{
+    position: fixed;
+    top:0;
+    right: -100%;
+    width: 360px;
+    min-height: 80vh;
+    z-index: 100;
+    padding: 20px;
+    background: #111827;
+    box-shadow:-2px 0 4px hsl(0 4% 15% /10%);
+    transition: .3s;
+}
+
+#basket.active{
+    right: 0;
+}
+
+#basket-title{
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.basket-box{
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    gap:1rem;
+    align-items:center;
+    margin-top: 1rem;
+    color: #ffffff;
+}
+
+.baske{
+    width:100px;
+     height:100px;
+    object-fit: contain;
+    padding:10px;  
+}
+
+.detail-box{
+    display: grid;
+    row-gap: 0.5rem;
+}
+
+.basket-product-title{
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.basket-price{
+    font-weight: 500;
+}
+
+.basket-quantity{
+    border:1px solid #ffffff;
+    color:#ffffff;
+    width:2.4rem;
+    background-color: transparent;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.basket-remove{
+    font-size: 24px;
+    color: #fD4646;
+    cursor:pointer;
+}
+
+.total{
+    display: flex;
+    justify-content: flex-end;
+    margin-top:1.5rem;
+    border-top:1px solid #ffffff;
+}
+
+.total-title{
+    font-size: 1rem;
+    font-weight: 600;
+    color:#ffffff;
+}
+
+.total-price{
+    margin-left:.5rem;
+    color: #ffffff;
+}
+
+.btn-buy{
+    display:flex;
+    margin: 1.5rem auto 0 auto;
+    padding: 10px 15px;
+    border: none;
+    background-color: #f31010;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn-buy:hover{
+    background: #ffffff;
+    color: #000000;
+}
+
+#close-basket{
+    position: absolute;
+    top:1rem;
+    right:0.8rem;
+    font-size: 2rem;
+    color:#ffffff;
+    cursor: pointer;
 }
 
 header{
@@ -146,13 +257,13 @@ header{
 }
 
 h1{
-    font-size: 50px;  
+    font-size: 48px;  
     text-align: justify;
     color: #FAFAFA; 
 }
 
 .new_arrivals{
-    font-size: 50px;
+    font-size: 48px;
     text-align: justify;
     margin-top: .5rem;
     color: #F7C59F;
@@ -210,13 +321,13 @@ p{
 
 /*This weeks highlights*/
 .container{
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
 }
 
-.title{
+.section-title{
     width: 15rem;
-    margin: auto;
+    margin: 0 auto;
     color: #192233;
     text-align: center;
     padding-bottom: 2rem;
@@ -253,14 +364,14 @@ p{
     .grid-wrapper > div > .img2{
         width: auto;
         height: auto;
-        margin-right: 14rem;
+        margin-right: 20rem;
         object-fit: cover;
     }
 
     .grid-wrapper > div > .img3{
         width: auto;
         height: auto;
-        margin-left: 16rem;
+        margin-left: 18rem;
         margin-top: 1rem;
         object-fit: cover;
     }
@@ -268,7 +379,7 @@ p{
     .grid-wrapper > div > .img4{
         width: 60%;
         height: auto;
-        margin-left: 2rem;
+        margin-right: 2rem;
         margin-top: -1rem;
         object-fit: cover;
     }
@@ -280,7 +391,7 @@ p{
         grid-auto-flow: dense;
         margin-bottom: 6rem;
     }
-
+    
     .exclusive{
         width:15vw;
         height: 25vh;
@@ -288,11 +399,12 @@ p{
         background-color: transparent;
         position: absolute;
         top: 128%;
-        left: 20%;  
+        left: 15%;
+        
     }
     
     .ex{
-        font-size: 40px;
+        font-size: 50px;
         color: #ffffff;
         text-shadow: 1px 1px 1px #9e9898;
         font-weight: 600;
@@ -305,24 +417,24 @@ p{
     }
 
     
-.shoes{
-    width:12vw;
-    height: 10vh;
-    position: absolute;
-    top: 95%;
-    right: 30%;
-    background-color: rgba(36, 34, 34, 0.5);
+    .shoes{
+        width:14vw;
+        height: 12vh;
+        position: absolute;
+        top: 135%;
+        right: 30%;
+        background-color: rgba(36, 34, 34, 0.5);
 }
 
 .es{
-    font-size: 12px;
+    font-size: 15px;
     color: #ffffff;
     font-weight: 600;
     margin-left: 1rem;    
 }
 
 .price{
-    font-size: 10px;
+    font-size: 12px;
     margin-top: -3.1rem;
     margin-left: 1rem;
     opacity: 0.7;
@@ -346,7 +458,7 @@ p{
 }
 
     .styles{
-    font-size: 40px;
+    font-size: 50px;
     font-stretch: expanded;
     color: #ffffff;
     text-shadow: 1px 1px 1px #9e9898;
@@ -356,16 +468,16 @@ p{
     }
 
     .shoe{
-        width:15vw;
+        width:16vw;
         height: 11vh;
         position: absolute;
-        top: 85%;
-        left: -3%;
+        top: 130%;
+        left: -7%;
         background-color: rgba(36, 34, 34, 0.5);;
     }
 
     .esc{
-        font-size: 14px;
+        font-size: 15px;
         color: #ffffff;
         font-weight: 600;
         margin-left: 1rem; 
@@ -377,12 +489,12 @@ p{
         margin-top: 1rem;
         background-color: transparent;
         position: absolute;
-        top: 180%;
-        left: 19%;  
+        top: 190%;
+        left: 15%;  
     }
     
     .Arrival{
-    font-size: 40px;
+    font-size: 50px;
     font-stretch: expanded;
     color: #ffffff;
     font-weight: 600;
@@ -392,16 +504,16 @@ p{
     }
     
     .sho{
-        width:12vw;
-        height: 10vh;
+        width:14vw;
+        height: 12vh;
         position: absolute;
-        top: 115%;
-        left: -1%;
+        top: 160%;
+        left: -11%;
         background-color: rgba(36, 34, 34, 0.5);
     }
     
     .na{
-        font-size: 13px;
+        font-size: 15px;
         color: #ffffff;
         font-weight: 600;
         margin-left: 1rem; 
@@ -414,12 +526,12 @@ p{
         margin-top: 1rem;
         background-color: transparent;
         position: absolute;
-        top: 178%;
-        right: 25%;  
+        top: 190%;
+        right: 20%;  
     }
 
     .Exc{
-    font-size: 40px;
+    font-size: 50px;
     font-stretch: expanded;
     color: #ffffff;
     text-shadow: 1px 1px 1px #9e9898;
@@ -429,16 +541,16 @@ p{
     }
 
     .sh{
-        width:12vw;
-        height: 10vh;
+        width:14vw;
+        height: 12vh;
         position: absolute;
-        top: 115%;
-        right: 20%;
+        top: 155%;
+        right: 35%;
         background-color: rgba(36, 34, 34, 0.5);
     }
 
     .ei{
-        font-size: 13px;
+        font-size: 15px;
         color: #ffffff;
         font-weight: 600;
         margin-left: 1rem;  
@@ -448,54 +560,66 @@ p{
     /*popular this week*/
     .Container{
         width: 80%;
-        margin: 0 auto;
+        margin:0 auto;
+       
     }
 
-    .girls{
+    .shop{
+        margin-top:2rem;
+    }
+
+    .shop-content{
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
-        margin-bottom: 4rem;
+        margin-top: 2rem;
+        margin-bottom: 6rem;
     }
 
-    .pic{
-        margin: 1rem;
+    .product-box{
+        position: relative;
     }
 
-    .strip{
+    .product-box:hover{
+        padding:2px;
+        border: 1px solid #000000;
+        transition: .4s;
+    }
+
+    .product-image{
+        width:100%;
+        height: auto;
+        margin-bottom: .5rem;
+    }
+    .product-title{
         font-size: 15px;
-        font-weight: 400;
-        color: #374151;     
+        font-weight: 600;
+        text-transform:uppercase;
+       
+        color: #374151;   
+        margin-bottom: .5rem;  
     }
 
-    .peplum{
-        font-size: 15px;
-        font-weight: 400;
-        margin-top: -3.5rem;
-        color: #374151;  
-    }
-
-    #price{
+    .product-price{
         font-size: 15px;
         font-weight: 700;
-        margin-top: -2.5rem;
+        margin-top: rem;
+        text-align:center;
         color: #374151; 
     }
 
     .slash{
-        margin-left: .8rem;
+        margin-left: 1.8rem;
         color: #b8bbc0;
         text-decoration: line-through;
         font-weight: lighter;
     }
 
-    .add{
-        margin-left: 3.5rem;
-        font-size: 14px;
-        font-weight: 700;
+    .add-cart{
+       position: absolute;
+       top: 93%;
+       right: 3%;
         color: #000000;
-        background-color: transparent;
-        border: none;
         cursor: pointer;
     }
 
@@ -603,7 +727,7 @@ p{
         .socials{
             display: flex;
             justify-content: space-evenly;
-            margin-left: -1rem;
+            margin-left: -.5rem;
         }
 
         .soc{
@@ -680,15 +804,17 @@ p{
             color:#6B7280;
             font-size: 12px;
             font-weight: 500;
-            margin-bottom: 2rem;
+            margin-bottom: .5rem;
+            margin-left: 1rem;
         }
 
         .copyright a{
+            display: inline-block; 
             color:#6B7280;
             font-size: 12px;
             font-weight: 500;
             margin: .5rem;
-            padding: .2rem;
+            padding: .2em;
             text-decoration: underline;
         }
 
@@ -727,7 +853,6 @@ p{
 
         #top{
            float: right;
-            width: 63%;
         }
 
         .top{
@@ -780,7 +905,7 @@ p{
             height:125%;
             float: left;
             background-color: #F9FAFB;
-            margin-left: 5rem;
+            margin-left: 3rem;
             padding: 1.5rem; 
            
         }
@@ -884,18 +1009,16 @@ p{
             width: 70%;
             height: 125%;
             float: right;  
-            margin-right: 3rem;
+            margin-right: 1.5rem;
         }
 
         .wrapper{
-            width: 100%;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin-top: -.5rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, auto));
         }
 
         .wrapper div{
+            width: 80%;
             height:480px;
             margin-top: .6rem;
             margin-left: 2.5rem;
@@ -904,25 +1027,15 @@ p{
 
         #heart{
             position:absolute;
-            margin-left: -4rem;
-            margin-top: 1rem;
+            margin-left: 14rem;
+            margin-top: -21rem;
         }
 
         .striped{
             text-align: justify;
             color: #1F2937;
-            font-size: 15px;
+            font-size: 17px;
             font-weight: 500;
-            margin-left: 1rem;
-            
-        }
-
-        .peplums{
-            text-align: justify;
-            color: #1F2937;
-            font-size: 15px;
-            font-weight: 500;
-            margin-top: -3.2rem;
             margin-left: 1rem;
         }
 
@@ -944,7 +1057,7 @@ p{
         }
 
         #slash{
-            margin-top: -3.4rem;
+            margin-top: -3.2rem;
             margin-bottom: 1rem;
         }
 
@@ -954,7 +1067,6 @@ p{
             color: #b8bbc0;
             text-decoration: line-through;
             font-weight: lighter;
-
         }
 
         .border{
@@ -1005,67 +1117,91 @@ p{
             font-size: 20px;  
         }
 
-      
-
-
-
-       
-      
-
-
-
-        
-
-       
-
-       
-        
-
-       
-
-        @media screen and (max-width: 700px){
+      /**MEDIA QUERIES*/
+        @media screen and (max-width: 768px) and (max-width: 600px), (max-width: 992px){
             .nav{
-                display: flex;
-            }
+                height: 4rem;        
+                }
 
-            .bars{
-                display: flex;
-                margin: 1.3rem;
-                font-size:24px;
-            }
+            /*.bars{
+               display: inline;
+               position: absolute;
+               top: 20px;
+               left:60px;
+               font-size: 20px;
+            }*/
             
             .logo{
-                position:absolute;
-                font-size: 30px;
-                margin-left: 5rem;
-                margin-top: .7rem;   
+                font-size: 22px;
+                margin-left: 2.5rem;
+                margin-top: 2rem;   
             }
 
+            #glass{
+                position: absolute;
+                top:4%;
+                left:25%;
+                font-size: 10px;
+            }
             
-             #glass{
-                margin-top: 1.7rem;
-                margin-left: 20rem;
+            #myInput{
+                margin-top: -.9rem;
+                
+                font-size: 9px;
+                padding-left: .8rem; 
+            
             }
 
-            input{
-                margin-top: .3rem;
-                font-size: 15px;
-                padding-left: .4rem; 
+            .link {
+                color: #000000;
+                font-size: 10px;
+            }
+
+            .link:hover{
+                background-color: #000000;
+                color: #ffffff;
+                padding: .2rem;
+            }
+
+            .bold{
+                display: none;
             }
 
             .others{
-                display: none;
+                width: 10rem;
+                margin-left: 15rem;
+                margin-top: .2rem;
             }
            
             .basket{
-                margin-top: 1.3rem;
-                margin-left: 2rem;
+                width:15px;
+                height:15px;
+                margin-top:-.2rem;
+                margin-left: 5rem;
+            }
+            
+            #basket{
+                position: fixed;
+                top:5%;
+                right: -100%;
+                width: 300px;
+                min-height: 80vh;
+                z-index: 0;
+                padding: 20px;
+              
             }
 
+            #close-basket{
+                top:2rem;
+            }
+            
+    /*End of Nav bar*/
+           
             header{
                 width: 200%;
+                height: 3rem;
                 transform:translateX(100%);
-                animation: cssmarquee 15s linear infinite;
+                animation: cssmarquee 30s linear infinite;
                 }
                 @keyframes cssmarquee {
                 0% {
@@ -1074,23 +1210,29 @@ p{
                 100% {
                 transform: translateX(-100%);
                 }
+                
                 }
 
             .items{
                 display: flex;
-                justify-content: space-between;
-                padding: .6rem;
+                justify-content: space-evenly;
+                padding: .4rem;
             }
 
                 
-                .items li a{
-                        margin: 1rem;
-                       font-size: 10px;
-                       font-weight: 600;
+            .items li a{
+                     margin: .5rem;
+                    font-size: 10px;
+                    font-weight: 600;
                 }
+            
+            .active{
+                padding: .2rem;   
+                }
+    /*End of header*/
 
-                .parent{
-                    display: flex;
+            .parent{    
+                display: flex;
                 }
 
                 .div1{
@@ -1107,12 +1249,12 @@ p{
                     width:50vw;
                     height: 40vh;
                     position: absolute;
-                    top: 28%;
-                    left: 3%;  
+                    top: 25%;
+                    left: 4%;  
                 }
 
                 h1{
-                    font-size: 30px; 
+                    font-size: 37px; 
                     margin-top: 1.5rem; 
                 }
 
@@ -1121,15 +1263,16 @@ p{
                 }
 
                 p{
-                    font-size: 10px;
+                    font-size: 15px;
+                    margin-bottom: 2rem;
                 }
 
                 #order{
-                    font-size: 8px;
+                    font-size: 10px;
                 }
 
                 #arr{
-                    font-size: 8px;
+                    font-size: 10px;
                 }
 
                 .div2{
@@ -1140,276 +1283,531 @@ p{
 
                 .circle{
                     width: 80%;
-                    height: 40%;
+                    height: 45%;
                     margin: auto;
                     border-radius: 50%;
                 }
 
                 .girl{
-                    height: 65%;
+                    height: 60%;
                     position: absolute;
                     top:27%;
-                    right: 1%;
+                    right: 3%;
+                }
+        /*End of discount section*/
+        .container{
+            width: 80%;
+            margin: 0 auto;
+        }
+
+            .title{
+                font-size: 16px;
+                    }
+                
+                hr{
+                    width: 70px;
+                    margin-left: 5.5rem;
+                    }
+                
+                .grid-wrapper img{
+                    max-width: 100%;
+                    height: auto;
+                    display: flex;
+                    }
+                
+                
+                .grid-wrapper > div > .img1{
+                    margin: 0 auto;
+                        
+                    }
+                
+                .grid-wrapper > div > .img2{
+                    margin: 0 auto;
+                    }
+                
+                .grid-wrapper > div > .img3{
+                    margin: 0 auto;
+                    }
+                
+                .grid-wrapper > div > .img4{
+                    margin: 0 auto;
+                    }
+                
+                .grid-wrapper{
+                    grid-template-columns: 1fr  ;
+                    }
+
+                .exclusive{
+                    top:110%;
+                    left: 30%;  
+                    }    
+                    
+                .shoes{
+                    width: 26vw;
+                    top: 110%;
+                    left: -18%;
+                }
+                
+                .es{
+                    font-size: 13px;  
+                    margin-left: .6rem;  
+                }
+                
+                .price{
+                    margin-top: -2rem;
+                    font-size: 10px;
+                    margin-left: .6rem;
+                }
+                
+                .off{
+                    margin-top: -1.9rem;
+                    font-size: 13px;
+                    margin-left: .7rem;
                 }
 
-                .title{
-                    width: 12rem;
-                    font-size: 14px;
+                .collection{
+                    width:65vw;
+                    margin-top: 10rem;
+                    top: 150%;
+                    left: 18%;  
+                }
+                
+                 .shoe{
+                    width:30vw;
+                    top: 120%;
+                    left: -10%;
+                 }
+                
+                .esc{
+                    font-size: 13px;
+                    margin-left: .6rem; 
                     }
                 
-                    hr{
-                        width: 70px;
-                        margin-left: 4rem;
-                    }
-                
-                    .photo-gallery img{
-                        width: 70%;
-                    }
-
-                    .photo_1{
-                        position:absolute;
-                        top: 40%;
-                        left: 90%;
-                    }
-
-                    .photo_2{
-                        position: relative;
-                        top: 20%;
-                        left: 100%;
-                    }
-
-                    
-                    .new{
-                        width:60vw;
-                        position: absolute;
-                        top: 30%;
-                        left: 5%;  
-                    }
-
-                    .sho{
-                        width:26vw;
-                        position: absolute;
-                        top: 70%;
-                        right: 68%;
-                    }
-
-                    
-                    .off{
-                        font-size: 11px;
-                    }
-
-                    .item{
-                        width:35vw;
-                        top: 22%;
-                        right: 15%; 
-                    }
-                
-                    .sh{
-                        width:25vw;
-                        position: absolute;
-                        top: 100%;
-                        right: 25%;              
-                    }
-                
-                    #slider{
-                        overflow: hidden;
-                        margin-top: -3rem;
-                    }
-
-                    #slider figure{
-                        position: relative;
-                        width: 200%;
-                        margin: 2rem;
-                        left: 1%;
-                        animation: 15s slider infinite  ;
-                            }
-
-                        #slider figure .photo-gallery{
-                            float:left;
-                        
-                        }
-
-                    @keyframes slider{
-                        0%{
-                            left:0;
-                        }
-                        20%{
-                            left: 0;
-                        }
-                        25%{
-                            left: -100%;
-                        }
-                        45%{
-                            left: -100%;
-                        }
-                        50%{
-                            left: -200%;
-                        }
-                        70%{
-                            left: -200%
-                        }
-                        75%{
-                            left: -300%;
-                        }
-                        95%{
-                            left: -300%;
-                        }
-                        100%{
-                            left: -400%;
-                        }
-                    }
-
-                    .Container{
-                        top: 180%;
-                        left: 5%;
-                        
-                    }
-                
-                    .pic{
-                        width: 40%;
-                        margin: 2.2rem;
-                    }
-
-                    .strip{
-                        font-size: 12px;    
-                    }
-
-                    .peplum{
-                        font-size: 12px;  
-                    }
-
-                    #price{
-                        font-size: 12px;
-                    }
-
-                    .COntainer{
-                        top: 270%;
-                        left: 6%;
-                        margin: auto;  
-                    }
-                
-                    #brands{
-                        margin-bottom: 5rem;
-                        margin-right: 2rem;
-                    }
-
-                    .summer img{
-                        width: 110%;
-                    }
-
-                    .summer{
-                        margin-left: -3rem;
-                    }
-            
-                    .details{
-                        top:50%;
-                        left: -2%;
-                    }
-
-                    #sum_collections{
-                        font-size: 20px;
-                    }
-         
-                    .number{
-                        width: 10rem;
-                        margin-top: 9rem;
-                        font-size: 12px;
-                    }
-                    .dot{
-                        font-weight: 300;
-                        color: #ffffff;
-                    }
-            
-                    .words{
-                        width: 10rem;
-                        font-size: 10px;
-                    }
-
-                    .footer{
-                        height: 90%;
-                        top: 351%;
-                        left:0%;
-                        padding: 50px 40px 20px 30px;
-                    }
-            
-                    .foot{
-                        margin-left: .8rem;
-                        font-size: 10px;
-                    }
-            
-                    li{
-                        margin: .2rem;    
-                    }
-            
-                    a{
-                        margin-left: .4rem;
-                    }
-
-                    .soc{
-                        margin: .4rem; 
-                        padding: 2px;
-                        font-size:10px;
-                    }
-
-                    .platforms{
-                        margin-top: .5rem;
-                        font-size: 18px;
-                    }
-            
-                    .sign{
-                        width: 60%;
-                        top:37%;
-                        left: 7%;
-                    }
-            
-                    #signup{
-                        font-size: 10px;
-                    }
-            
-                    button{
-                        position: absolute;
-                        top: 14%;
-                        left: 83%;
-                    }
-            
-                    .copyright{
-                        width: 100%;
-                        height: auto;
-                        position: absolute;
-                        top:60%;
-                        left: 5%;
-                    }
-
-                    br{
-                        display: none;
+                .new{
+                    width: 40vw;
+                    top: 235%;
+                    left: 30%;  
                     }
                     
-                    .copyright p{
-                        margin-bottom: 2rem;
+                .sho{
+                    width:26vw;
+                    top: 125%;
+                    left: -46%;
+                    }
+                    
+                .na{
+                    font-size: 13px;
+                    margin-left: .6rem; 
+                    }
+                
+                .item{
+                    width:25vw;
+                    top: 290%;
+                    right: 45%;  
+                    }
+                
+                .sh{
+                    width:26vw;
+                    top: 129%;
+                    right: 5%;
+                    }
+                
+                .ei{
+                    font-size: 13px;
+                    margin-left: .6rem;  
+                    }
+     /*End of this weeks highlight*/           
+             .Container{
+                width: 40%;
+                 margin:0 auto;
+                 }
 
-                    }
+            .shop{
+              margin-top:1rem !important;
+                  }
+            .shop-content{
+                display: inline-block;
+            }
 
-                    .copyright a{
-                        margin: .1rem;
-                        padding: .1rem;
-                    }
-            
-                    .accept{
-                        width: 60%;
-                        position: absolute;
-                        top: 80%;
-                        left:10%;
-                        margin: auto;
-                    }
-    
-                    .accept p{
-                        text-align: center;
-                        font-size: 12px;
-                    }
-            
-                    .cards img{
-                        margin-top: .5rem;
-                        margin-bottom: .5rem;
-                    }
-            
+            .product-box{
+                margin: 1.5rem;
+            }
+        /*End of popular brands*/
+
+        .COntainer{
+            width: 80%;
+            margin: 0 auto;
         }
+    
+        #brands{
+            margin-bottom: 3rem;
+           justify-content: space-evenly;
+        }
+
+        .summer img {
+           max-width: 100%;
+           
+        }
+
+        .details{
+            width: 40%;
+            margin-top: -12rem;
+            margin-left: 3rem;
+        }
+
+        #sum_collections{
+            font-size: 16px;
+            color: #0D3F64;
+            margin-bottom: 1rem;
+        }
+
+        .number{
+            justify-content: space-evenly;
+            margin-top: 5rem;
+            margin-left: -2rem;
+            font-size: 12px;
+        }
+
+        .dot{
+            color: #f2f5f8;
+        }
+
+        .words{
+            justify-content: space-evenly;
+            margin-left: -2.5rem;
+        }
+        /*End of Brands for you*/
+        .footer{
+            height: 90%;
+            padding: 30px 40px 40px 5px;
+            }
+         
+        .foot{
+            margin-top: .5rem;
+            margin-left: .8rem;
+            font-size: 8px;
+            }
+            
+        li{
+            margin: .2rem;    
+            }
+        
+        a{
+            margin-left: .4rem;
+            font-size: 8px;
+            }
+
+        .soc{
+            padding: 2px;
+            font-size:10px;
+           
+            }
+
+        .platforms{
+            font-size: 15px;
+            margin-right: -1.5rem;
+            }
+         
+        .sign{
+            width: 40%;
+            margin-right: -.2rem;
+            margin-top: -5rem;
+            }
+
+        .in{
+            padding:.4rem 4rem .4rem .3rem;
+        }
+            
+        #signup{
+            font-size: 8px;
+                }
+                 
+        button{
+            font-size: 10px;
+                }
+        
+         .sub{
+            font-size: 7px;
+            margin-left: .2rem;
+            margin-top: .1rem;
+                }
+        
+        #cookie{
+            font-size: 6px;
+                }
+
+        .copyright{
+            width: 60%;
+            margin-top: 2rem;
+            margin-left: 4rem;
+                }
+        
+        .copyright p{
+            font-size: 8px;
+            margin-bottom: .2rem;
+            margin-left: .8rem;
+                }
+        
+        .copyright a{
+            display: flex;
+            font-size: 8px;
+            margin: .5rem;
+           
+                }
+        
+         .accept{
+            width: 40%;
+            margin-top: -8rem;
+            margin-right: -.5rem;
+                }
+        
+         .accept p{
+            font-size: 8px;
+            font-weight: 800;
+                }
+        
+        .cards{
+            margin-top: .5rem;
+                }
+        
+        .cards img{
+            width: 12%;
+            margin-top: .5r0m;
+                }    
+       
+            /*end of footer*/
+
+
+        /*product landing page*/
+        .ladies{
+            margin-top: .5rem ;
+        }
+
+        #top{
+             width: 124%;
+        }
+
+        .top{
+            font-size: 10px;
+            position:absolute;  
+            padding-top: .5rem;
+           
+           }
+   
+           .sales{
+                position: absolute;
+                margin-top: 3rem;
+               font-size: 10px;
+               margin-left: 1.5rem;   
+           }
+        
+        #showing{
+            margin-top: .7rem;
+        }
+
+        #showing p{
+            margin-left: 1.3rem;
+        }
+
+        .sort{
+            margin-right: 1.3rem;
+        }
+
+         /*SIDE BAR*/
+         .sidebar{
+            width: 100%;
+            height: 150%;
+            margin-bottom: 25rem;  
+        }
+ 
+        .diva{
+            height: 100%;
+            margin-left: 1.3rem;
+            padding: .5rem; 
+        }
+
+        .head{
+            font-size: 12px;
+            margin-left: .5rem;
+            margin-top: 2rem;
+        }
+        
+        #prices p{
+            font-size: 10px;
+        }
+        
+        #prices img{
+            width: 75%;
+            margin-bottom: .5rem;
+        }
+        
+        .filters input{
+            width: 10px;
+            margin: .4rem;   
+        }
+        
+        .filters span{
+            font-size: 10px;
+        }
+        
+        .brands{
+            margin-top: .5rem;
+        }
+        
+        .brands input{
+            width: 10px;
+            margin: .4rem;  
+        }
+        
+        .brands span{
+            font-size: 10px;
+        }
+        
+        .brands .num{
+            font-size: 10px;
+            margin-left: 1.5rem; 
+        }
+        
+        .categories{
+            margin-top: -.5rem;
+        }
+        
+        .categories input{
+            width: 10px;
+            margin: .4rem;  
+        }
+        
+        .categories span{
+            font-size: 10px;
+        }
+        
+        .categories .num{
+            font-size: 10px;
+            margin-left: 2rem; 
+        }
+        
+        .size{
+            margin-top: -.5rem;
+        }
+        
+        .size input{
+            width: 10px;
+            margin: .4rem;  
+        }
+        
+        .size span{
+            font-size: 10px;
+        }
+
+        /*SIDE BAR2*/
+        .div_b{
+            height: 120%; 
+            margin-right: 3.5rem;
+        }
+
+        .wrapper{
+            grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+            gap: .5rem;
+        }
+
+        .wrapper div{
+            width: 80%;
+            height:340px;
+            margin-top: -.1rem;
+            border:1px solid #b8bbc0;
+        }
+
+        .wrapper div img{
+            width: 100%;
+        }
+
+        .F{
+            display: none;
+        }
+
+        #heart{
+            width: 3%;
+            position:absolute;
+            margin-left: -2rem;
+            margin-top: 1rem;
+        }
+
+        .striped{
+            text-align: left;
+            color: #1F2937;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        #priced{
+            margin-top: -1.5rem;
+            margin-left: 1rem;
+            font-size: 12px;
+        }
+
+        .amt{
+            font-size: 12px;
+            margin-right: 1rem;
+        }
+
+        #slash{
+            margin-top: -1.5rem;
+            margin-bottom: .5rem;
+        }
+
+        .slashed{
+            margin-left: .8rem;
+            font-size: 12px;
+        }
+
+        .border{
+            float: right;
+            margin-right: 1rem;
+            background-color: #000000;
+            color: #ffffff;
+            font-size: 10px;
+            padding: .1rem .5rem;
+        }
+
+        .page_num{
+            width: 5%;
+            height: 6%;
+            font-size: 10px;
+            float: right;
+            margin-top: -3rem;
+            margin-right: 15rem;
+            display: flex;
+        }
+
+        #none{
+            border: 1px solid #000000;
+            padding: .5rem;
+            margin: .3rem;
+        }
+
+        .black{
+            background-color: #000000;
+            padding: .5rem;
+            margin: .3rem;
+        }
+
+        .black i{
+            font-weight: bolder;
+            color: #ffffff;
+            font-size: 15px;  
+        }
+
+        .grey{
+            background-color: #D1D5DB;
+            padding: .5rem;
+            margin: .3rem;
+        }
+
+        .grey i{
+            font-weight: bolder;
+            font-size: 15px;  
+        }
+    }  
+
+
+  
