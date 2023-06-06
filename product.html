@@ -12,20 +12,38 @@
 <body>
     <!--NAVBAR-->
     <div class="nav">
-        <div class="bars">
-            <i class="fa fa-bars" aria-hidden="true"></i>
-        </div>
         <p class="logo">Laura's Closet</p>
-                <i class="fa fa-search" id="glass" aria-hidden="true"></i>
-            <input type="text" placeholder="Search for an item...">
-            <div class="others">
+                <i class="fa fa-search" id="glass" aria-hidden="true">
+            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for an item..."></i>
+            <div class="bars">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+            <div class="others ">
                 <a class="link" href="#store">Store</a>
                 <a class="link"href="#account">Account</a>
                 <a class="link"href="#wishlist">WishList</a>
-                <a class="link" href="#basket"><span class="bold">Basket</a></span>           
+                <a class="link" href="#bas"><span class="bold">Basket</a></span>           
             </div>
-            <img class="basket" src="./images/shopping-basket 1.png" alt="basket">
+            <a href="#"><img class="basket" src="./images/shopping-basket 1.png" alt="basket"></a>
+    <!--Basket-->
+            <div id="basket">
+                <h2 id="basket-title">Your Basket</h2>
+                <div class="basket-content">
+        
+                    
+                </div>
+                <!--Total-->
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">$0</div>
+                </div>
+                <!--Buy button-->
+                <button type="button" class="btn-buy">Buy Now</button>
+                <!--Basket Close-->
+                <i class="fa fa-times" aria-hidden="true" id="close-basket"></i>
+            </div>
         </div>
+       
     
     <!--HEADER-->
         <header>
@@ -49,7 +67,7 @@
         
         <!--LADIES TOP-->
         <div class="ladies">
-            <img id="top" src="./images/ladies.png" alt="top">
+            <img id="top"  width="67%" src="./images/ladies.png" alt="top">
             <span id="text">
             <p class="top">Ladies top</p>
             <p class="sales">Slash Sales begins in April. Get upto 80% discount on all products <a  id="read" href="#"> Read more</a></p>
@@ -57,7 +75,7 @@
         </div>
 
         <div id="showing">
-            <p ><b>Showing  1 - 20</b> of 2,356 products <span class="sort">Sort by: <b>New Arrivals</b> <img src="./images/arr down.png" alt=""></i></span></p>
+            <p><b>Showing  1 - 20</b> of 2,356 products <span class="sort">Sort by: <b>New Arrivals</b> <img src="./images/arr down.png" alt=""></i></span></p>
         </div>
 
         <!---SIDE BAR-->
@@ -112,41 +130,37 @@
         <div class="div_b">
         <div class="wrapper">
             <div class="A">
-            <img src="./images/girl2.png" alt="">
+            <img src="./images/girl1.png" alt="">
             <img id="heart" src="./images/heart.png" alt="">
-            <p class="striped">Striped Flutter Sleeve Overlap Collar</p>
-            <p class="peplums">Peplum Hem Blouse</p>
+            <p class="striped">Flutter Hoodie</p>
             <p id="priced">$120.23 <span class="amt">24 orders</span></p>
             <p id="slash"><span class="slashed">$120.23</span><span class="border">New Arrivals</span></p>
             </div>
             <div class="B">
                 <img src="./images/girl2.png" alt="">
                 <img id="heart" src="./images/heart.png" alt="">
-                <p class="striped">Striped Flutter Sleeve Overlap Collar</p>
-                <p class="peplums">Peplum Hem Blouse</p>
+                <p class="striped">Sleeve Overlap Collar</p>
                 <p id="priced">$120.23 <span class="amt">24 orders</span></p>
                 <p id="slash"><span class="slashed">$120.23</span></p>
             </div>
             <div class="C">
-                <img src="./images/girl2.png" alt="">
+                <img src="./images/girl3.png" alt="">
                 <img id="heart" src="./images/heart.png" alt="">
-                <p class="striped">Striped Flutter Sleeve Overlap Collar</p>
-                <p class="peplums">Peplum Hem Blouse</p>
+                <p class="striped">Striped Flutter Pant</p>
                 <p id="priced">$120.23 <span class="amt">24 orders</span></p>
                 <p id="slash"><span class="slashed">$120.23</span></p>
             </div>
             <div class="D">
-                <img src="./images/girl2.png" alt="">
-                <p class="striped">Striped Flutter Sleeve Overlap Collar</p>
-                <p class="peplums">Peplum Hem Blouse</p>
+                <img src="./images/girl4.png" alt="">
+                <img id="heart" src="./images/heart.png" alt="">
+                <p class="striped"> Overlap Half Top</p>
                 <p id="priced">$120.23 <span class="amt">24 orders</span></p>
                 <p id="slash"><span class="slashed">$120.23</span></p>
             </div>
             <div class="E">
-                <img src="./images/girl2.png" alt="">
+                <img src="./images/girl1.png" alt="">
                 <img id="heart" src="./images/heart.png" alt="">
-                <p class="striped">Striped Flutter Sleeve Overlap Collar</p>
-                <p class="peplums">Peplum Hem Blouse</p>
+                <p class="striped">Flutter Hoodie</p>
                 <p id="priced">$120.23 <span class="amt">24 orders</span></p>
                 <p id="slash"><span class="slashed">$120.23</span><span class="border">New Arrivals</span></p>
             </div>
@@ -155,26 +169,23 @@
                 <img id="heart" src="./images/heart.png" alt="">
             </div>
             <div class="G">
-                <img src="./images/girl2.png" alt="">
+                <img src="./images/girl3.png" alt="">
                 <img id="heart" src="./images/heart.png" alt="">
-                <p class="striped">Striped Flutter Sleeve Overlap Collar</p>
-                <p class="peplums">Peplum Hem Blouse</p>
+                <p class="striped">Striped Flutter Pant</p>
                 <p id="priced">$120.23 <span class="amt">24 orders</span></p>
                 <p id="slash"><span class="slashed">$120.23</span></p>
             </div>
             <div class="H">
-                <img src="./images/girl2.png" alt="">
+                <img src="./images/girl4.png" alt="">
                 <img id="heart" src="./images/heart.png" alt="">
-                <p class="striped">Striped Flutter Sleeve Overlap Collar</p>
-                <p class="peplums">Peplum Hem Blouse</p>
+                <p class="striped">Overlap Half Top</p>
                 <p id="priced">$120.23 <span class="amt">24 orders</span></p>
                 <p id="slash"><span class="slashed">$120.23</span><span class="border">New Arrivals</span></p>
             </div>
             <div class="I">
-                <img src="./images/girl2.png" alt="">
+                <img src="./images/girl1.png" alt="">
                  <img id="heart" src="./images/heart.png" alt="">
-                 <p class="striped">Striped Flutter Sleeve Overlap Collar</p>
-                 <p class="peplums">Peplum Hem Blouse</p>
+                 <p class="striped">Flutter Hoodie</p>
                  <p id="priced">$120.23 <span class="amt">24 orders</span></p>
                  <p id="slash"><span class="slashed">$120.23</span></p>
             </div>
@@ -211,7 +222,7 @@
         <div class="footer">
         <div id="footer">
             <ul><span class="foot">COMPANY INFO</span>
-                <li><a href="#">AboutLaura's Closet</a></li>
+                <li><a href="#">About Laura's Closet</a></li>
                 <li><a href="#">Social Responsibility</a></li>
                 <li><a href="#">Affiliate</a></li>
                 <li><a href="#">Fashion Blogger</a></li>
@@ -253,13 +264,13 @@
                 <p id="signup">SIGN UP FOR LAURA'S CLOSET STYLE NEWS</p>
                 <input class="in" type="text" placeholder="Your email">
                 <button>SUBSCRIBE</button>
-                <p class="sub">By clicking the SUBSCRIBE button, you are agreeing on our <a id="cookie" href="#">Privacy & Cookie Policy</a></p>
+                <p class="sub">By clicking the SUBSCRIBE button, you are agreeing on our<a id="cookie" href="#">Privacy & Cookie Policy</a></p>
             </div>
             <div class="copyright">
                 <p>&copy 2010 - 2022 Laura's Closet All Rights Reserved</p>
                 <a href="#">Privacy Center</a>
                 <a href="#">Privacy & Cookie Policy</a>
-                <a href="#">Manage Cookies</a><br><br>
+                <a href="#">Manage Cookies</a>
                 <a href="#">Terms & Conditions</a>
                 <a href="#">Copyright Notice</a>
                 <a href="#">Imprint</a>
@@ -282,6 +293,8 @@
                     <img src="./images/PayPal.jpg" alt="pay">
                     <img src="./images/Western Union.jpg" alt="pay">
                 </div>
+                
+
             </div>
         </div>
     </footer>
